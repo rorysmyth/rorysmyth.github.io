@@ -38,22 +38,78 @@
 							action: "number",
 							value: "+1 415 9953"
 						},
+						{
+							id: 2,
+							keypress: 4,
+							action: "number",
+							value: "+1 415 9953"
+						},
+					],
+				},
+				{
+					name: "Complaints menu",
+					greeting: "complaints greeting",
+					routes: [
+						{
+							id: 1,
+							keypress: 3,
+							action: "number",
+							value: "+1 415 9953"
+						},
+						{
+							id: 2,
+							keypress: 4,
+							action: "number",
+							value: "+1 415 9953"
+						},
+						{
+							id: 3,
+							keypress: 5,
+							action: "number",
+							value: "+1 415 9953"
+						},
+						{
+							id: 4,
+							keypress: 6,
+							action: "group",
+							value: "customer care"
+						},
 					],
 				},
 			],
 		},
 		{
 			name: "French general menu",
-			ivr: [{
-				name: "Customer care",
-				greeting: "Customer care greeting",
-				routes: [{
-					id: 1,
-					keypress: 2,
-					action: "number",
-					value: "+1 415 9953"
-				}],
-			}],
+			ivr: [
+				{
+					name: "Customer care",
+					greeting: "Customer care greeting",
+					routes: [{
+						id: 1,
+						keypress: 2,
+						action: "number",
+						value: "+1 415 9953"
+					}],
+				},
+				{
+					name: "Tech support menu",
+					greeting: "tech support greeting",
+					routes: [
+						{
+							id: 1,
+							keypress: 3,
+							action: "number",
+							value: "+1 415 9953"
+						},
+						{
+							id: 2,
+							keypress: 4,
+							action: "number",
+							value: "+1 415 9953"
+						},
+					],
+				},
+			],
 		},
 		{
 			name: "German general menu",

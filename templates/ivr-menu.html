@@ -7,7 +7,7 @@
 
 		<!-- ivr menu level -->
 		<div id="ivrmenu-{{$index}}" ng-class="{open:ivrMenuCtrl.isActive($index)}" class="capsule" ng-repeat="menu in ivrMenuCtrl.menus">
-
+				
 				<h3 ng-click="ivrMenuCtrl.setActive($index)" class="header">{{menu.name}} <span class="sub">({{menu.ivr.length}}) levels</span></h3>
 
 				<!-- name -->
@@ -73,6 +73,7 @@
 
 				
 				<!-- primary menu level -->
+				<!--
 				<div class="row t-40 b-40">
 					<h4>Primary</h4>
 					<div class="meta">
@@ -87,6 +88,7 @@
 						</div>
 					</div>
 				</div>
+				-->
 				<!-- /primary menu level -->
 
 
