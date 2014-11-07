@@ -449,6 +449,7 @@ table {
     content: "";
     background: url("../img/cog.png") center center no-repeat; }
   .capsule h3 {
+    cursor: pointer;
     margin: 0;
     padding: 0; }
     .capsule h3.header {
