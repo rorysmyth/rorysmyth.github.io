@@ -7,6 +7,18 @@
 	overflow:hidden;
 	max-height:60px;
 	-webkit-transition:max-height 0.4s;
+	position:relative;
+	&:after {
+		position: absolute;
+		top:23px;
+		right:30px;
+		display: block;
+		width: 27px;
+		height:14px;
+		background:red;
+		content:"";
+		background:url('../img/cog.png') center center no-repeat;
+	}
 	h3 {
 		margin: 0;
 		padding:0;
