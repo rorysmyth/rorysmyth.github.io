@@ -4,15 +4,16 @@
 	<title>IVR</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-	<script type="text/javascript" src="js/data.js"></script>
-	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/ivrMenuController.js"></script>
 </head>
 <body>
 
 
+<!-- start container -->
 <div id="work" ng-controller="savingController">
-
-	<!-- <div class="capsule" ng-class="{'open':capsuleOpen() }" > -->
+	<div class="inner">
+	
 	<div class="capsule open" >
 		<h3 class="header">Saving inside a capsule</h3>
 
@@ -74,7 +75,6 @@
 		<div class="loading"></div>
 	</div>
 
-	<div class="inner">
 
 	<div class="well">
 		<p>
@@ -95,6 +95,7 @@
 	</div>
 		
 </div>
+<!-- end container -->
 </div>
 
 <div id="sidebar">
