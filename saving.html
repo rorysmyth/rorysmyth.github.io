@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ivrApp">
+<head>
+	<title>IVR</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+</head>
+<body>
+
+
+<div id="work" ng-controller="savingController">
+
+	<!-- <div class="capsule" ng-class="{'open':capsuleOpen() }" > -->
+	<div class="capsule open" >
+		<h3 class="header">Saving inside a capsule</h3>
+
+		<!-- name -->
+		<div class="row t-10 b-40">
+			<h4>Field to edit</h4>
+			<div class="meta">
+				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+			</div>
+			<div class="input">
+				<input ng-change="makeChange(1)" ng-model="input" class="b-20" type="text">
+			</div>
+		</div>
+		<!-- /name -->
+
+		<!-- save action -->
+		<div class="save-controls">
+			<hr>
+			<div class="button-group b-30">
+				
+
+				<!-- cancel -->
+					<button ng-click="revertChanges()" class="cancel white" ng-class="{'grey':isSaving()}" ng-show="changeMade()">Cancel</button>
+					<button class="cancel grey" ng-show="!changeMade()">Cancel</button>
+				<!-- cancel -->
+				
+
+				<!-- save -->
+					<button class="save grey" ng-show="!changeMade()">
+						Save
+					</button>
+					<button class="save green" ng-click="setSave(1)" ng-show="changeMade() && !isSaving()">
+						Save
+					</button>
+					<!-- loading -->
+					<button ng-show="isSaving()" class="save green" ng-click="setSave(1)">
+						<span class="loading-icon loading-1"></span>
+						<span class="loading-icon loading-2"></span>
+						<span class="loading-icon loading-3"></span>
+					</button>
+					<!-- /loading -->
+				<!-- save -->
+
+
+			</div>
+		</div>
+		<!-- /save action -->		
+
+	</div>
+
+	<div ng-class="{'down': activeGrowl() }" class="growl">
+		changes made
+		<span class="close">as</span>
+	</div>
+	
+	<div style="display:none" class="voice-animation">
+		<div class="avatar"></div>
+		<div class="overlay"></div>
+		<div class="loading"></div>
+	</div>
+
+	<div class="inner">
+
+	<div class="well">
+		<p>
+			<strong>change made to input:</strong>
+			<span class="debug" ng-class="{'on':changed,'off':!changed}">{{changed}}</span>
+		</p>
+
+		<p>
+			<strong>saving:</strong>
+			<span class="debug" ng-class="{'on':saving,'off':!saving}">{{saving}}</span>
+		</p>
+
+		<p>
+			<strong>saved:</strong>
+			<span class="debug" ng-class="{'on':saved,'off':!saved}">{{saved}}</span>
+		</p>
+
+	</div>
+		
+</div>
+</div>
+
+<div id="sidebar">
+	<div class="main"></div>
+	<div class="sub"></div>
+</div>
+
+<div id="header">
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+</body>
+</html>

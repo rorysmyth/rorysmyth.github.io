@@ -1,0 +1,5 @@
+.capsule {
+  box-sizing: border-box;
+  padding: 30px; }
+  .capsule.closed {
+    background: #f8f8f8; }

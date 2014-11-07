@@ -1,0 +1,106 @@
+<h3 class="t-40 b-10">IVR Menus</h3>
+
+<!-- menus -->
+<div class="menus">
+
+		{{editing}}
+
+		<!-- ivr menu level -->
+		<div id="ivrmenu-{{$index}}" ng-class="{open:ivrMenuCtrl.isActive($index)}" class="capsule" ng-repeat="menu in ivrMenuCtrl.menus">
+
+				<h3 ng-click="ivrMenuCtrl.setActive($index)" class="header">{{menu.name}} <span class="sub">({{menu.ivr.length}}) levels</span></h3>
+
+				<!-- name -->
+				<div class="row t-10 b-40">
+					<h4>Name</h4>
+					<div class="meta">
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+					</div>
+					<div class="input">
+						<input required ng-model="menu.name" type="text">
+					</div>
+				</div>
+				<!-- /name -->
+				
+				<!-- menu level header -->
+				<div class="title-action b-10">
+					<h4>IVR menu levels</h4>
+					<a href="#" class="action">add new level</a>
+				</div>
+				<!-- /menu level header -->
+
+				<!-- menu levels -->
+				<div ng-controller="routeController as routeCtrl">
+				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:routeCtrl.isActive($index)}" class="capsule child">
+					<h3 ng-click="routeCtrl.setActive($index)" class="header">{{level.name}}<span class="sub"> ({{level.routes.length}} routes)</span></h3>
+
+					<div class="row">
+						<div class="input l-0 b-40 t-15">
+							<h4 class="b-10">{{level.name}}</h4>
+							<input type="text" value="Nested">
+						</div>
+
+						<div class="input l-40">
+							<h4 class="b-10">Greeting</h4>
+							<div class="audio">
+								<select name="greeting" id="">
+									<option selected="selected" value="one">{{level.greeting}}</option>
+									<option value="two">two</option>
+								</select>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="title-action b-10">
+						<h4>Active routes ({{level.routes.length}})</h4>
+						<a href="#" class="action">add new routes</a>
+					</div>
+					<ul class="route-table">
+						<li ng-repeat="route in level.routes">
+							<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
+							<span class="seg">
+								route to <span class="action">{{route.action}}</span> {{route.value}}
+							</span>
+							<span class="edit">
+								<span ng-click="routeCtrl.test(route)" >edit</span><span href="#">delete</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+				</div>
+				<!-- /menu levels -->
+
+				
+				<!-- primary menu level -->
+				<div class="row t-40 b-40">
+					<h4>Primary</h4>
+					<div class="meta">
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
+					</div>
+					<div class="input">
+						<div class="audio">
+							<select name="greeting" id="">
+								<option value="one">one</option>
+								<option value="two">two</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<!-- /primary menu level -->
+
+
+				<!-- save action -->
+				<div class="save-controls">
+					<hr>
+					<div class="button-group b-30">
+						<button class="cancel white">Cancel</button>
+						<button class="save l-10 green">Save</button>
+					</div>
+				</div>
+				<!-- /save action -->
+
+		</div>
+		<!-- /ivr menu level -->
+	</div>
+	<!-- /menus

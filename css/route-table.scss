@@ -1,0 +1,46 @@
+.route-table {
+	font-size:13px;
+	li {
+		line-height: 40px;
+		padding: 0 20px;
+		&:first-child{
+			border-top: 1px solid #ddd;
+		}
+		&:last-child{
+			border-bottom: none;
+			margin-bottom: 15px;
+		}
+		border-bottom: 1px solid #ddd;
+		&:hover {
+			background: #fafafa;
+			.edit {
+				display: block;
+				span {
+					&:hover {
+						color: darken($blue, 20);
+					}
+				}
+			}
+		}
+	}
+	.action {
+		font-weight: 600;
+	}
+	.seg {
+		margin-right: 20px;
+	}
+	.edit {
+		display: none;
+		float:right;
+		span {
+			text-decoration: none;
+			color: $blue;
+			&:last-child{
+				$d:15px;
+				margin-left: $d;
+				padding-left:$d;
+				border-left:1px solid $blue;
+			}
+		}
+	}
+}

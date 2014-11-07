@@ -1,0 +1,1 @@
+!function(){var t=angular.module("routingExample",["ngRoute"]);t.config(["$routeProvider",function(t){t.when("/settings",{templateUrl:"templates/settings.html",controller:"settingsController"}).when("/using",{templateUrl:"templates/using.html",controller:"usingController"})}]),t.controller("tabController",["$scope","navService",function(t,e){t.nav=e}])}();

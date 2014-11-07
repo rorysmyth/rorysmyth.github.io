@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ivrApp">
+<head>
+	<title>IVR</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/ivrMenuController.js"></script>
+</head>
+<body>
+
+
+<div id="work">
+	
+	<div style="display:none" class="voice-animation">
+		<div class="avatar"></div>
+		<div class="overlay"></div>
+		<div class="loading"></div>
+	</div>
+
+	<div class="inner">
+		<h1>Voice</h1>
+	
+	<div class="tab">
+		<ul>
+			<li>Settings</li>
+			<li>Numbers</li>
+			<li>Greetigs</li>
+			<li class="active">IVR</li>
+		</ul>
+	</div>
+
+	<ivr-menus></ivr-menus>
+	
+</div>
+</div>
+
+<div id="sidebar">
+	<div class="main"></div>
+	<div class="sub"></div>
+</div>
+
+<div id="header">
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+</body>
+</html>

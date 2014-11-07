@@ -1,0 +1,17 @@
+@for $i from 0 through 40 {
+	.t-#{$i}{
+		margin-top: #{$i}px;
+	}
+}
+
+@for $i from 0 through 40 {
+	.b-#{$i}{
+		margin-bottom: #{$i}px;
+	}
+}
+
+@for $i from 0 through 40 {
+	.l-#{$i}{
+		margin-left: #{$i}px !important;
+	}
+}

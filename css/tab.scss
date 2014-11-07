@@ -1,0 +1,17 @@
+.tab {
+	border-bottom:1px solid #ddd;
+	font-size:13px;
+	li {
+		list-style-type: none;
+		display:inline-block;
+		padding: 0 10px 10px 10px;
+		a {
+			text-decoration: none;
+			color: #555;
+		}
+		&.active {
+			border-bottom: 3px solid $green;
+			font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.voice-animation {
+	position: relative;
+	background:#fff;
+	width:60px;
+	height:60px;
+	border:1px solid #ddd;
+	border-radius:5px;
+	.avatar {
+		width:60px;
+		height: 60px;
+		border-radius: 5px;
+		background: url('../img/face.jpg');
+		background-size:contain;
+		position: relative;
+	}
+	.overlay {
+		background:rgba(255,255,255,0.85);
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		top:0;
+		left:0;
+		border-radius:5px;
+	}
+	.loading {
+		display: block;
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		top:0;
+		left:0;
+		content:"";
+		background:url('/img/dotted-bar.gif') center center no-repeat;
+	}
+}

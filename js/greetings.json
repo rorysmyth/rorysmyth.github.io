@@ -1,0 +1,60 @@
+[
+    {
+      "name": "waiting",
+      "greetings": {
+        "active":[
+          {
+            "name":"us voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          },
+          {
+            "name":"uk voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          }
+        ],
+        "inactive":[
+          {
+            "name":"old us voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          },
+          {
+            "name":"old uk voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          }  
+        ]
+      }
+    },
+    {
+      "name": "voicemail",
+      "greetings": {
+        "active":[
+          {
+            "name":"us voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          },
+          {
+            "name":"uk voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          }
+        ],
+        "inactive":[
+          {
+            "name":"old us voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          },
+          {
+            "name":"old uk voicemail",
+            "locale":"us",
+            "number": "+1 555 444 333"
+          }  
+        ]
+      }
+    }
+]

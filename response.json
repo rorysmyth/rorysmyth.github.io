@@ -1,0 +1,29 @@
+[
+	{
+		"name": "English general menu",
+		"ivrMenus": [{
+			"name": "Customer care",
+			"greeting": "Customer care greeting",
+			"levels": [
+				{
+					"id": 1,
+					"keypress": 2,
+					"action": "number",
+					"value": "+1 415 9953"
+				},
+				{
+					"id": 2,
+					"keypress": 2,
+					"action": "number",
+					"value": "+1 415 9953"
+				},
+				{
+					"id": 3,
+					"keypress": 2,
+					"action": "number",
+					"value": "+1 415 9953"
+				}
+			],
+		}],
+	}
+]

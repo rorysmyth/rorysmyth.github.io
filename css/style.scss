@@ -1,0 +1,312 @@
+@import 'layout';
+@import 'colors';
+@import 'reset';
+@import 'tab';
+@import 'margins';
+@import 'capsule';
+@import 'route-table';
+@import 'voice-animation';
+
+body {
+	font-family: "Proxima Nova";
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #ddd;
+    margin: 30px 0; padding: 0; }
+
+#header {
+	position: fixed;
+	width:100%;
+	height:42px;
+	background:$green;
+	top:0;
+	left:0;
+}
+
+
+#sidebar {
+	.main,
+	.sub {
+		position: fixed;
+		left:0;
+		top:0;
+	}
+	.main {
+		width:60px;
+		height:100%;
+		background:#e7e7e7;
+	}
+	.sub {
+		width:290px;
+		height:100%;
+		background:#f8f8f8;
+		left:60px;
+		border:1px solid #ddd;
+		border-width:0 1px 0;
+	}
+}
+
+#work {
+
+	margin-left:390px;
+	margin-top:82px;
+	padding-right:40px;
+
+	.inner {
+		width: 850px
+	}
+
+}
+
+h1 {
+	font-size:22px;
+	margin-bottom:40px;
+}
+
+h3 {
+	font-size:14px;
+	font-weight:600;
+	.sub {
+		font-size: 12px;
+		color:#999;
+	}
+}
+
+h4 {
+	font-size:13px;
+	font-weight:600;
+}
+
+p {
+	color:#555;
+	font-size:13px;
+	line-height:14px;
+	margin-top:10px;
+}
+
+* {
+	// background:rgba(0,0,0,0.1)
+}
+
+.row {
+	.meta,
+	.input {
+		display:inline-block;
+	}
+	.meta {
+		width: 450px;
+		p {
+			color:#999
+		}
+	}
+	.input {
+		width:270px;
+		margin-left:50px;
+	}
+}
+
+
+input[type="text"] {
+	$padding:8px;
+	width:100%;
+	border:1px solid #ddd;
+	padding:$padding 0 $padding 10px;
+	border-radius:4px;
+	font-size:13px;
+	font-family: "Proxima Nova";
+	color:#555;
+	position: relative;
+	&:focus {
+		border:1px solid $green;
+		outline:none;
+	}
+}
+
+select {
+	width:100%;
+	border:1px solid #ddd;
+	font-size:13px;
+	background:#fff;
+	font-family:"Proxima Nova";
+	height:32px;
+	text-indent:25px;
+}
+
+.audio {
+	position: relative;
+	&::after {
+		content:"";
+		display: block;
+		position: absolute;
+		top:4px;
+		left:5px;
+		width:23px;
+		height:23px;
+		background:url('/img/play.png');
+	}
+	input {
+		padding-left:35px;
+	}
+}
+
+.title-action {
+	h4,
+	a.action {
+		display: inline
+	}
+	a.action {
+		color: $blue;
+		text-decoration: none;
+		font-size: 13px;
+		float: right;
+	}
+}
+
+button {
+	font-family:"Proxima Nova";
+	font-size:13px;
+	padding:10px 20px;
+	border-radius:5px;
+	border:none;
+	cursor:pointer;
+	outline:none;
+	-webkit-transition:0.3s;
+	border:1px solid #fff;
+
+	&.green {
+		background:$green;
+		color:#fff;
+	}
+	&.white {
+		color:#555;
+		background:#fff;
+		border:1px solid #ddd;
+	}
+	&.grey {
+		background:#ddd;
+		color:#fff;
+	}
+}
+
+.loading-icon {
+	&:nth-child(2),
+	&:nth-child(3),{
+		margin-left: 2px;
+	}
+}
+
+$time: 0;
+@for $i from 1 through 3 {
+	span.loading-#{$i}{
+		$d : 8px;
+		display:inline-block;
+		border-radius:$d/2;
+		width:$d;
+		height:$d;
+		background:rgba(255,255,255,0.9);
+		-webkit-animation: loadingIcon 0.4s linear #{$time+0.2}s infinite alternate;
+		$time: $time + 0.2;
+	}
+}
+
+@-webkit-keyframes loadingIcon {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.save-controls {
+
+	.button-group {
+		float:right;
+	}
+}
+
+*.ng-invalid {
+	border:1px solid red;
+}
+
+textarea {
+	width:100%;
+	border: 1px solid #ddd;
+	border-radius:5px;
+	clear:both;
+	margin-bottom:20px;
+}
+
+.well {
+	margin-top:30px;
+	background: #f5f5f5;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+	padding:20px;
+	font-size:12px;
+	color:#55;
+	border-radius:5px;
+}
+
+.growl {
+	$h:35px;
+	position: absolute;
+	line-height:$h;
+	top:-50px;
+	right:10px;
+	width:340px;
+	height:$h;
+	background:#fff url('../img/growl-tick.png') 10px center no-repeat;
+	display:block;
+	z-index:9999;
+	border-radius:5px;
+	font-size:13px;
+	text-indent:35px;
+	border:1px solid #e5e5e5;
+	-webkit-transition:0.4s;
+	&.down {
+		top:2px;
+	}
+	.close {
+		position: absolute;
+		top:14px;
+		right:10px;
+		display: block;
+		background:url('../img/growl-close.png') center center no-repeat;
+		width: 7px;
+		height: 7px;
+	}
+}
+
+@-webkit-keyframes growlIn {
+	0% {
+		top: -50px;
+	}
+	100% {
+		top: 2px;
+	}
+}
+
+p {
+	strong{
+		font-weight:bold;
+	}
+}
+
+.debug {
+	&.on {
+		background:$green;
+		padding:3px;
+		color:#fff;
+		font-size:11px;
+		border-radius:3px; 
+	}
+	&.off {
+		background:#ccc;
+		padding:3px;
+		color:#222;
+		font-size:11px;
+		border-radius:3px; 
+	}
+}
