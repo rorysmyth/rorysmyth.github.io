@@ -1,14 +1,10 @@
-<h3 class="t-40 b-10">IVR Menus</h3>
-
 <!-- menus -->
 <div class="menus">
 
-		{{editing}}
-
 		<!-- ivr menu level -->
-		<div id="ivrmenu-{{$index}}" ng-class="{open:ivrMenuCtrl.isActive($index)}" class="capsule" ng-repeat="menu in ivrMenuCtrl.menus">
+		<div id="ivrmenu-{{$index}}" ng-class="{open:isActive($index)}" class="capsule" ng-repeat="menu in ivrMenus">
 				
-				<h3 ng-click="ivrMenuCtrl.setActive($index)" class="header">{{menu.name}} <span class="sub">({{menu.ivr.length}}) levels</span></h3>
+				<h3 ng-click="setActive($index)" class="header">{{menu.name}} <span class="sub">({{menu.ivr.length}}) levels</span></h3>
 
 				<!-- name -->
 				<div class="row t-10 b-40">
@@ -30,9 +26,9 @@
 				<!-- /menu level header -->
 
 				<!-- menu levels -->
-				<div ng-controller="routeController as routeCtrl">
-				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:routeCtrl.isActive($index)}" class="capsule child">
-					<h3 ng-click="routeCtrl.setActive($index)" class="header">{{level.name}}<span class="sub"> ({{level.routes.length}} routes)</span></h3>
+				<div ng-controller="routeController">
+				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:isActive($index)}" class="capsule child">
+					<h3 ng-click="setActive($index)" class="header">{{level.name}}<span class="sub"> ({{level.routes.length}} routes)</span></h3>
 
 					<div class="row">
 						<div class="input l-0 b-40 t-15">
@@ -70,27 +66,6 @@
 				</div>
 				</div>
 				<!-- /menu levels -->
-
-				
-				<!-- primary menu level -->
-				<!--
-				<div class="row t-40 b-40">
-					<h4>Primary</h4>
-					<div class="meta">
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,</p>
-					</div>
-					<div class="input">
-						<div class="audio">
-							<select name="greeting" id="">
-								<option value="one">one</option>
-								<option value="two">two</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				-->
-				<!-- /primary menu level -->
-
 
 				<!-- save action -->
 				<div class="save-controls">

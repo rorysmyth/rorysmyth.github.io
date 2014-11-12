@@ -1,264 +1,130 @@
 (function(){
 	
-	var menus = [
-		{
-			name: "English general menu",
-			ivr: [
-				{
-					name: "Main menu",
-					greeting: "Customer care greeting",
-					routes: [
-						{
-							id: 1,
-							keypress: 1,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 2,
-							keypress: 2,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 3,
-							keypress: 4,
-							action: "number",
-							value: "+1 415 9953"
-						}
-					],
-				},
-				{
-					name: "Tech support menu",
-					greeting: "tech support greeting",
-					routes: [
-						{
-							id: 1,
-							keypress: 3,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 2,
-							keypress: 4,
-							action: "number",
-							value: "+1 415 9953"
-						},
-					],
-				},
-				{
-					name: "Complaints menu",
-					greeting: "complaints greeting",
-					routes: [
-						{
-							id: 1,
-							keypress: 3,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 2,
-							keypress: 4,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 3,
-							keypress: 5,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 4,
-							keypress: 6,
-							action: "group",
-							value: "customer care"
-						},
-					],
-				},
-			],
-		},
-		{
-			name: "French general menu",
-			ivr: [
-				{
-					name: "Customer care",
-					greeting: "Customer care greeting",
-					routes: [{
-						id: 1,
-						keypress: 2,
-						action: "number",
-						value: "+1 415 9953"
-					}],
-				},
-				{
-					name: "Tech support menu",
-					greeting: "tech support greeting",
-					routes: [
-						{
-							id: 1,
-							keypress: 3,
-							action: "number",
-							value: "+1 415 9953"
-						},
-						{
-							id: 2,
-							keypress: 4,
-							action: "number",
-							value: "+1 415 9953"
-						},
-					],
-				},
-			],
-		},
-		{
-			name: "German general menu",
-			ivr: [{
-				name: "Customer care",
-				greeting: "Customer care greeting",
-				routes: [{
-					id: 1,
-					keypress: 2,
-					action: "number",
-					value: "+1 415 9953"
-				}],
-			}],
-		},
-	];
-
-	var app = angular.module('ivrApp', ['ngRoute']);
+	var app = angular.module('ivrApp', ['ngRoute','truncate'])
 
 
-	app.directive('ivrMenus', function(){
-		var data = menus;
+	.factory('ipsumService', function(){
 		return {
-			restrict: 'E',
-			templateUrl: 'templates/ivr-menu.html',
-			controller: function($log){
-				
-				this.menus = data;
-				this.activeCapsule = null;
+        	ipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id pharetra elit, et suscipit odio. Maecenas non ultrices sem, id aliquet sapien. Proin est erat, fermentum a quam sit amet, ultrices pellentesque felis. Aliquam fermentum risus risus, sed facilisis magna aliquet id. Etiam at augue felis. Nunc dignissim ipsum et ligula malesuada, vitae accumsan nisi vulputate. Vestibulum vel dui lacus. Mauris sagittis nibh a ante mattis consectetur. Quisque aliquet arcu sit amet lobortis iaculis."
+      	}; 
+	})
 
-				this.setActive =  function(capsule){
+	.controller('debugController', function($scope,$window,$rootScope){
 
-					if (this.activeCapsule === capsule) {
-						this.activeCapsule = null;
-						return;
-					};
-					this.activeCapsule = capsule;
+		$rootScope.debug = false;
+		$scope.toggleDebug = function(){
+			if ($rootScope.debug == false) {
+				$rootScope.debug = true;
+				return;
+			}
+			$rootScope.debug = false;
+		}
 
-				}
-				this.isActive = function(capsule){
-					return this.activeCapsule === capsule;
-				}
+	})
 
-			},
-			controllerAs: 'ivrMenuCtrl'
-		};
-	});
+	.controller('devController', function($scope, ipsumService){
+		$scope.ipsum = ipsumService.ipsum;
+	})
 
-	app.controller('routeController', function($log){
+	.controller('routeController', function($scope,$log){
 
-		this.activeRoute = null;
-		this.setActive = function(route){
+		$scope.activeRoute = null;
+		$scope.setActive = function(route){
 
-			if (this.activeRoute === route) {
-				this.activeRoute = null;
+			if ($scope.activeRoute === route) {
+				$scope.activeRoute = null;
 				return;
 			};
 
-			this.activeRoute = route;
+			$scope.activeRoute = route;
 
 		};
-		this.isActive = function(route){
-			return this.activeRoute === route;
+		$scope.isActive = function(route){
+			return $scope.activeRoute === route;
 		};
-		this.test = function(route){
-			route.action = "testing this thing"
-		};
-	});
 
-	app.controller('savingController', function($scope,$log,$timeout){
+	})
+
+	.directive('ivrMenus', function(){
 		
-		$scope.saving = false;
-		$scope.changed = false;
-		$scope.input = "default value";
-		$scope.saved = false;
-		$scope.growl = false;
-		$scope.capsule = true;
+		return {
 
-		$scope.capsuleOpen = function(){
-			return $scope.capsule === true;
-		}
+			restrict: 'E',
+			templateUrl: 'templates/ivr-menu.html',
+			controller: function($log,$scope,$http){
+				
+				$http.get('/js/ivr.json')
+					.success(function(data){
+						$scope.ivrMenus = data;
+					});
 
-		$scope.closeCapsule = function(){
-			$scope.capsule == false;
-		}
+				$scope.activeCapsule = null;
 
-		$scope.changeMade = function(){
-			return $scope.changed === true;
-		}
+				$scope.setActive =  function(capsule){
 
-		$scope.makeChange = function(val){
-			switch	(val){
-				case 0:
-					$scope.changed = false;
-					break;
-				case 1:
-					$scope.changed = true;
-					break;
+					if ($scope.activeCapsule === capsule) {
+						$scope.activeCapsule = null;
+						return;
+					};
+					$scope.activeCapsule = capsule;
+
+				}
+				$scope.isActive = function(capsule){
+					return $scope.activeCapsule === capsule;
+				}
+
 			}
-		}
+		};
+	})
 
-		$scope.revertChanges = function(){
-			if ($scope.saved) {
-				$scope.input = $scope.input;
-			} else {
-				$scope.input = "default value";
+	.directive('ivrDropdown', ['ipsumService', function(ipsumService){
+
+		return {
+
+			restrict: 'E',
+			templateUrl: 'templates/ivr-dropdown.html',
+			controller: function($log,$scope,$http,ipsumService){
+				
+				$http.get('/js/ivr.json')
+					.success(function(data){
+						$scope.ivrMenus = data;
+						$scope.ivrMenusJs = _(data).toArray();
+					});
+
+
+				$scope.ipsum = ipsumService.ipsum;
+				$scope.activeCapsule = null;
+				$scope.activeTab = 1;
+
+				$scope.setActive =  function(capsule){
+
+					if ($scope.activeCapsule === capsule) {
+						$scope.activeCapsule = null;
+						return;
+					};
+					$scope.activeCapsule = capsule;
+
+				}
+				$scope.isActive = function(capsule){
+					return $scope.activeCapsule === capsule;
+				}
+
+				$scope.setTab = function(tab){
+					$scope.activeTab = tab;
+				}
+
+				$scope.isActiveTab = function(tab){
+					return $scope.activeTab === tab;
+				}
+
+				
+
 			}
-			$scope.changed = false;
-			$scope.saved = false;
-		}
+		};
 
-		$scope.lapClean = function(){
-			$scope.changed = false;
-			$scope.saved = true;
-		}
+	}]);
 
-		$scope.activeGrowl = function(){
-			return $scope.growl === true;
-		}
 
-		$scope.setSave = function(state){
-			if (state == 1 && $scope.changed == true) {
-				$scope.saving = true;
-				$timeout(function(){
-					$scope.saving = false;
-					$scope.saved = true;
-					$scope.lapClean();
-				},2000);
-				$timeout(function(){
-					$scope.growl = true;
-					$scope.capsule = false;
-				},2500);
-				$timeout(function(){
-					$scope.growl = false;
-				},4500);
-			} else {
-				$scope.saving = false;
-			}
-		}
 
-		$scope.isSaving = function(){
-			if ($scope.saving == true) {
-				return true;
-			};
-		}
-
-		$scope.isSaved = function(){
-			return $scope.saved === true;
-		}
-
-	});
 
 })();

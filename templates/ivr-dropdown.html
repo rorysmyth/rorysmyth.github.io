@@ -1,0 +1,136 @@
+<!-- capsule parent -->
+	<div class="menus">
+		
+		<!-- single capsule -->
+		<div id="ivrmenu-{{$index}}" ng-class="{open:isActive($index)}" ng-repeat="menu in ivrMenus" class="capsule">
+
+			<h3 ng-click="setActive($index); setTab(1)" class="header">{{menu.name}}</h3>
+			
+			<!-- capsule tabs -->
+			<div class="tab b-40 t-10">
+				<ul>
+					<li ng-class="{ 'active':isActiveTab(1) }" ng-click="setTab(1)">Settings</li>
+					<li ng-class="{ 'active':isActiveTab(2) }" ng-click="setTab(2)">IVR Menu levels ({{menu.ivr.length}})</li>
+					<li ng-class="{ 'active':isActiveTab(3) }" ng-click="setTab(3)">Associated numbers (2)</li>
+				</ul>
+			</div>
+			<!-- capsule tabs -->
+
+
+			<!-- 
+			--------------------------------------------
+				settings tab
+			--------------------------------------------
+			-->
+			<div class="row" ng-show="activeTab === 1">
+				
+				<div class="col w-790">
+					<h4 class="b-10">Name</h4>
+					<div class="col w-{{790-270-30}}">
+						<p>{{ipsum | words: 20 }}</p>
+					</div>
+					<div class="col w-270 l-30">
+						<input type="text" value="{{menu.name}}">
+					</div>
+				</div>
+
+			</div>
+			<!-- 
+			--------------------------------------------
+				/settings tab
+			--------------------------------------------
+			-->
+
+
+			<!-- 
+			--------------------------------------------
+				ivr menu level tab
+			--------------------------------------------
+			-->
+			<div class="row" ng-show="activeTab === 2">		
+			
+
+				<!-- ivr dropdown select -->
+				<div class="col w-200">
+					<h4 class="b-10">IVR Menu</h4>
+					<select ng-init="selectedIvr = menu.ivr[0]" ng-model="selectedIvr" ng-options="ivr.name for ivr in menu.ivr">
+					</select>
+				</div>
+				<!-- /ivr dropdown select -->
+		
+				<!-- ivr info -->
+				<div class="col w-560 l-30">
+					
+					<!-- name -->
+					<div class="row">
+						<h4 class="b-10">Name</h4>
+						<div class="col w-330">
+							<p>{{ ipsum | words : 15}}</p>
+						</div>
+						<div class="col w-200 l-30">
+							<input type="text" value="{{selectedIvr.name}}">
+						</div>
+					</div>
+					<!-- /name -->
+
+					<!-- greeting -->
+					<div class="row t-40">
+						<h4 class="b-10">Greeting</h4>
+						<div class="col w-330">
+							<p>{{ ipsum | words : 15}}</p>
+						</div>
+						<div class="col w-200 l-30 audio">
+							<select name="" id="">
+								<option ng-bind="selectedIvr.greeting" value=""></option>
+							</select>
+						</div>
+					</div>
+					<!-- /greeting -->
+
+					<!-- active routes -->
+					<div class="row t-40 b-10 title-action">
+						<h4>Active Routes ({{selectedIvr.routes.length}})</h4>
+						<a href="#" class="action">add new route</a>
+					</div>
+
+
+					<div class="row">
+						<ul class="route-table">
+							<li ng-repeat="route in selectedIvr.routes">
+								<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
+								<span class="seg">
+									route to <span class="action">{{route.action}}</span> {{route.value}}
+								</span>
+								<span class="edit">
+									<span>edit</span><span href="#">delete</span>
+								</span>
+							</li>
+						</ul>
+					</div>
+					<!-- /active routes -->
+				</div>
+				<!-- /ivr info -->
+			
+			</div>
+			<!-- 
+			--------------------------------------------
+				/ivr menu level tab
+			--------------------------------------------
+			-->
+		
+			<!-- save action -->
+			<div class="save-controls">
+				<hr>
+				<div class="button-group b-30">
+					<button class="cancel white">Cancel</button>
+					<button class="save l-10 black">Save</button>
+				</div>
+			</div>
+			<!-- /save action -->
+
+		
+		</div> 
+		<!-- /single capsule -->
+
+	</div>
+	<!-- /capsule parent -->

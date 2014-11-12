@@ -15,6 +15,40 @@ hr { display: block; height: 1px;
     border: 0; border-top: 1px solid #ddd;
     margin: 30px 0; padding: 0; }
 
+* {
+	box-sizing:border-box;
+}
+
+body.debug {
+	div,span {
+		background:rgba(46, 204, 113,0.3) !important;
+		* {
+			background:rgba(46, 204, 113,0.2) !important;
+		}
+	}
+}
+
+.debug-control {
+	$light: lighten(#000,60);
+	$dark: lighten(#000,20);
+	border:1px solid $light;
+	color:$light;
+	border-radius:5px;
+	font-size:20px;
+	text-align:center;
+	width:80%;
+	height:50px;
+	line-height:50px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-transition:0.3s;
+	&:hover {
+		border:1px solid $dark;
+		color:$dark;
+		cursor:pointer;
+	}
+}
+
 #header {
 	position: fixed;
 	width:100%;
@@ -54,8 +88,8 @@ hr { display: block; height: 1px;
 	padding-right:40px;
 
 	.inner {
-		width: 850px
-	}
+		// to allow for rounded sizes
+		width: 852px; 	}
 
 }
 
@@ -81,8 +115,8 @@ h4 {
 p {
 	color:#555;
 	font-size:13px;
-	line-height:14px;
-	margin-top:10px;
+	line-height:18px;
+	// margin-top:10px;
 }
 
 * {
@@ -130,7 +164,11 @@ select {
 	background:#fff;
 	font-family:"Proxima Nova";
 	height:32px;
-	text-indent:25px;
+}
+
+.col {
+	display:inline-block;
+	float:left;
 }
 
 .audio {
@@ -145,20 +183,27 @@ select {
 		height:23px;
 		background:url('/img/play.png');
 	}
-	input {
+	select {
+		text-indent:25px;
 		padding-left:35px;
 	}
 }
 
-.title-action {
+.row {
 	&:after {
 	content: "";
 	display: table;
 	clear: both;
 	}
+}
+
+.title-action {
 	h4,
 	a.action {
 		display: inline;
+	}
+	h4, {
+		line-height: 30px;
 	}
 	a.action {
 		border:1px solid #ddd;

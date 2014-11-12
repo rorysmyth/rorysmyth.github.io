@@ -1,17 +1,23 @@
-@for $i from 0 through 40 {
+@for $i from 0 through 100 {
 	.t-#{$i}{
 		margin-top: #{$i}px;
 	}
 }
 
-@for $i from 0 through 40 {
+@for $i from 0 through 100 {
 	.b-#{$i}{
 		margin-bottom: #{$i}px;
 	}
 }
 
-@for $i from 0 through 40 {
+@for $i from 0 through 100 {
 	.l-#{$i}{
 		margin-left: #{$i}px !important;
+	}
+}
+
+@for $i from 0 through 780 {
+	.w-#{$i}{
+		width: #{$i}px;
 	}
 }

@@ -12,6 +12,13 @@
 		&.active {
 			border-bottom: 3px solid $green;
 			font-weight: bold;
+			&:hover {
+				border-color:$green;
+			}
+		}
+		&:hover {
+			cursor:pointer;
+			border-bottom: 3px solid #eee;
 		}
 	}
 }
