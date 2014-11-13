@@ -7,3 +7,5 @@
 [Thu Oct 30 13:00:13 2014] [error] [client 127.0.0.1] File does not exist: /Users/rsmyth/Sites/sandbox.dev/templates, referer: http://sandbox.dev/index.html
 [Thu Oct 30 13:00:30 2014] [error] [client 127.0.0.1] File does not exist: /Users/rsmyth/Sites/sandbox.dev/templates, referer: http://sandbox.dev/index.html
 [Mon Nov 03 11:36:08 2014] [error] [client 127.0.0.1] File does not exist: /Users/rsmyth/Sites/sandbox.dev/favicon.ico
+[Thu Nov 13 10:50:35 2014] [error] [client 127.0.0.1] File does not exist: /Users/rsmyth/Sites/sandbox.dev/favicon.ico
+[Thu Nov 13 10:50:37 2014] [error] [client 127.0.0.1] File does not exist: /Users/rsmyth/Sites/sandbox.dev/dd

@@ -1,3 +1,4 @@
+<h3 class="t-40 b-10">IVR Menus</h3>
 <!-- menus -->
 <div class="menus">
 
@@ -5,6 +6,9 @@
 		<div id="ivrmenu-{{$index}}" ng-class="{open:isActive($index)}" class="capsule" ng-repeat="menu in ivrMenus">
 				
 				<h3 ng-click="setActive($index)" class="header">{{menu.name}} <span class="sub">({{menu.ivr.length}}) levels</span></h3>
+
+				
+
 
 				<!-- name -->
 				<div class="row t-10 b-40">
@@ -52,7 +56,7 @@
 						<h4>Active routes ({{level.routes.length}})</h4>
 						<a href="#" class="action">add route</a>
 					</div>
-					<ul class="route-table">
+					<ul class="table">
 						<li ng-repeat="route in level.routes">
 							<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
 							<span class="seg">

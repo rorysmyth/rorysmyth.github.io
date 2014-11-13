@@ -6,6 +6,8 @@
 @import 'capsule';
 @import 'route-table';
 @import 'voice-animation';
+@import 'side-menu';
+@import 'radio-button';
 
 body {
 	font-family: "Proxima Nova";
@@ -138,6 +140,10 @@ p {
 		width:270px;
 		margin-left:50px;
 	}
+	&.border {
+		border-bottom:1px solid #ddd;
+		padding-bottom: 40px;
+	}
 }
 
 
@@ -169,6 +175,9 @@ select {
 .col {
 	display:inline-block;
 	float:left;
+	&.right {
+		float:right
+	}
 }
 
 .audio {

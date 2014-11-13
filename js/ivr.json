@@ -74,7 +74,8 @@
                }
             ]
          }
-      ]
+      ],
+      "numbers":[0,2]
    },
    {
       "name":"French general menu",
@@ -109,7 +110,8 @@
                }
             ]
          }
-      ]
+      ],
+      "numbers":[1,2]
    },
    {
       "name":"German general menu",
@@ -126,6 +128,7 @@
                }
             ]
          }
-      ]
+      ],
+      "numbers":[1]
    }
 ]

@@ -1,0 +1,20 @@
+[
+	{
+		"id":0,
+		"name":"New York Office",
+		"number":"+1 555 666 777",
+		"locale":"us"
+	},
+	{
+		"id":1,
+		"name":"Dublin Office",
+		"number":"+1 555 666 777",
+		"locale":"ie"
+	},
+	{
+		"id":2,
+		"name":"Shanghai York Office",
+		"number":"+1 555 666 777",
+		"locale":"ie"
+	}
+]

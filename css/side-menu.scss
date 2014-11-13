@@ -1,0 +1,62 @@
+@mixin side-border {
+	border:1px solid #c9c9c9;
+}
+.side-menu {
+	$margin:15px;
+	margin-left:$margin;
+	margin-right:$margin;
+	ul {
+		li {
+			color:#999;
+			$r:5px;
+			@include side-border;
+			border-width:0 1px;
+			background:#fff;
+			padding:0 20px;
+			font-size:13px;
+			line-height: 40px;
+			border-bottom:1px solid #ccc;
+			position: relative;
+			&:hover {
+				cursor: pointer;
+			}
+			&:first-child {
+				border-width: 1px 1px 1px 1px;
+				border-radius:$r $r 0 0;
+			}
+			&:last-child {
+				border-width: 0 1px 1px 1px;
+				border-radius: 0 0 $r $r;
+			}
+			&.active,
+			&:hover {
+				background:#f8f8f8;
+				&:after {
+					content: "";
+					height: 100%;
+					width: 5px;
+					position: absolute;
+					top:0;
+					left:0;
+					background:$green;
+				}
+			}
+			&.active {
+				&:after {
+					content: "";
+					height: 100%;
+					width: 5px;
+					position: absolute;
+					top:0;
+					left:0;
+					background:$green;
+				}
+				&:last-child {
+					&:after {
+						border-radius:0 0 0 $r;
+					}
+				}
+			}
+		}
+	}
+}

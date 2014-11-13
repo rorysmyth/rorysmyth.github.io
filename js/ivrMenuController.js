@@ -1,6 +1,6 @@
 (function(){
 	
-	var app = angular.module('ivrApp', ['ngRoute','truncate'])
+	var app = angular.module('voiceAdmin', ['ngRoute','truncate'])
 
 
 	.factory('ipsumService', function(){
@@ -8,6 +8,21 @@
         	ipsum: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id pharetra elit, et suscipit odio. Maecenas non ultrices sem, id aliquet sapien. Proin est erat, fermentum a quam sit amet, ultrices pellentesque felis. Aliquam fermentum risus risus, sed facilisis magna aliquet id. Etiam at augue felis. Nunc dignissim ipsum et ligula malesuada, vitae accumsan nisi vulputate. Vestibulum vel dui lacus. Mauris sagittis nibh a ante mattis consectetur. Quisque aliquet arcu sit amet lobortis iaculis."
       	}; 
 	})
+
+	.config(['$routeProvider',function($routeProvider) {
+		$routeProvider
+			.when('/ivr',{
+				templateUrl: 'views/ivr.html'
+			})
+			.when('/ivr/dropdown',{
+				templateUrl: 'views/ivr-dropdown.html'
+			})
+			.when('/settings',{
+				templateUrl: 'views/settings.html',
+				controller: 'settingsController'
+			})
+
+	}])
 
 	.controller('debugController', function($scope,$window,$rootScope){
 
@@ -22,8 +37,41 @@
 
 	})
 
+	.controller('settingsController', function($scope, $log, ipsumService){
+		$scope.ipsum = ipsumService.ipsum;
+	})
+
+	.directive('radioButton', function(){
+		return {
+			restrict: 'E',
+			templateUrl: 'templates/dropdown.html',
+			scope: {
+				state: "@"
+			},
+			controller: function($log, $scope, $attrs, $location){
+				$scope.state = $attrs.state;
+			}
+		};
+	})
+
 	.controller('devController', function($scope, ipsumService){
 		$scope.ipsum = ipsumService.ipsum;
+	})
+
+	.controller('ivrMenuController', function($scope, $route, $routeParams, $location){
+		
+		$scope.$route = $route;
+		$scope.$location = $location;
+		$scope.$routeParams = $routeParams;
+
+		$scope.changeVersion = function(view){
+			$location.path(view)
+		}
+
+		$scope.isActive = function(url){
+			return $scope.$location.path() === url;
+		}
+
 	})
 
 	.controller('routeController', function($scope,$log){
@@ -42,6 +90,29 @@
 		$scope.isActive = function(route){
 			return $scope.activeRoute === route;
 		};
+
+	})
+
+	.controller('associatedNumbersController', function($scope,$log,$http){
+		
+		$http.get('/js/numbers.json')
+		.success(function(data){
+			$scope.numbers = data;
+		});
+
+		$scope.isAttached = function(menuNumbers, numberId){
+			return _.include(menuNumbers, numberId)
+		}
+
+		$scope.toggleNumber = function(menu, numberId){
+			if(_.include(menu.numbers, numberId)){
+				$log.log();
+				menu.numbers.splice(menu.numbers.indexOf(numberId),1)
+				return;
+			}
+			menu.numbers.push(numberId)
+			$log.log(menu.numbers)
+		}
 
 	})
 
@@ -75,6 +146,22 @@
 
 			}
 		};
+	})
+
+	.controller('navController', function($scope, $location, $route, $routeParams){
+		
+		$scope.$route = $route;
+		$scope.$location = $location;
+		$scope.$routeParams = $routeParams;
+
+		$scope.changePage = function(page){
+			$location.path(page)
+		}
+
+		$scope.isActive = function(url){
+			return $scope.$location.path() === url;
+		}
+
 	})
 
 	.directive('ivrDropdown', ['ipsumService', function(ipsumService){
@@ -116,8 +203,6 @@
 				$scope.isActiveTab = function(tab){
 					return $scope.activeTab === tab;
 				}
-
-				
 
 			}
 		};

@@ -1,3 +1,4 @@
+<h3 class="t-40 b-10">IVR Menus</h3>
 <!-- capsule parent -->
 	<div class="menus">
 		
@@ -9,9 +10,9 @@
 			<!-- capsule tabs -->
 			<div class="tab b-40 t-10">
 				<ul>
-					<li ng-class="{ 'active':isActiveTab(1) }" ng-click="setTab(1)">Settings</li>
-					<li ng-class="{ 'active':isActiveTab(2) }" ng-click="setTab(2)">IVR Menu levels ({{menu.ivr.length}})</li>
-					<li ng-class="{ 'active':isActiveTab(3) }" ng-click="setTab(3)">Associated numbers (2)</li>
+					<li ng-class="{ 'active':isActiveTab(1) }" ng-click="setTab(1)">IVR Menu levels ({{menu.ivr.length}})</li>
+					<li ng-class="{ 'active':isActiveTab(2) }" ng-click="setTab(2)">Associated numbers (2)</li>
+					<li ng-class="{ 'active':isActiveTab(3) }" ng-click="setTab(3)">Settings</li>
 				</ul>
 			</div>
 			<!-- capsule tabs -->
@@ -19,10 +20,43 @@
 
 			<!-- 
 			--------------------------------------------
+				associated numbers
+			--------------------------------------------
+			-->
+			<div ng-show="activeTab === 2">
+				<div class="row t-40 b-10">
+					<h4>Numbers ({{selectedIvr.routes.length}})</h4>
+				</div>
+				
+				<div class="row" ng-controller="associatedNumbersController">
+					<ul class="table">
+						<li ng-repeat="number in numbers" class="number {{number.locale}} ">
+							<span class="seg">
+								<span class="action">{{number.name}}</span> ({{number.number}})
+							</span>
+							<div class="col w-80 t-5 right">
+								<div class="radio-button" ng-click="toggleNumber(menu, number.id)" ng-class="{'active': isAttached(menu.numbers, number.id) }">
+									<span class="toggle"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 
+			--------------------------------------------
+				/associated numbers
+			--------------------------------------------
+			-->
+
+
+			<!-- 
+			--------------------------------------------
 				settings tab
 			--------------------------------------------
 			-->
-			<div class="row" ng-show="activeTab === 1">
+			<div class="row" ng-show="activeTab === 3">
 				
 				<div class="col w-790">
 					<h4 class="b-10">Name</h4>
@@ -47,7 +81,7 @@
 				ivr menu level tab
 			--------------------------------------------
 			-->
-			<div class="row" ng-show="activeTab === 2">		
+			<div class="row" ng-show="activeTab === 1">
 			
 
 				<!-- ivr dropdown select -->
@@ -95,7 +129,7 @@
 
 
 					<div class="row">
-						<ul class="route-table">
+						<ul class="table">
 							<li ng-repeat="route in selectedIvr.routes">
 								<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
 								<span class="seg">

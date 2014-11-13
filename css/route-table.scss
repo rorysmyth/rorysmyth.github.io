@@ -1,4 +1,4 @@
-.route-table {
+.table {
 	font-size:13px;
 	li {
 		line-height: 40px;
@@ -21,6 +21,19 @@
 						color: darken($blue, 20);
 					}
 				}
+			}
+		}
+		&.number {
+			padding:0 0 0 45px;
+			background: url('/img/gb.png') 20px 13px no-repeat;
+			&.gb {
+				background-image:url('/img/gb.png');
+			}
+			&.us {
+				background-image:url('/img/us.png');
+			}
+			&.ie {
+				background-image:url('/img/ie.png');
 			}
 		}
 	}
