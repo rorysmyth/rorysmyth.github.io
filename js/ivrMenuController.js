@@ -21,6 +21,10 @@
 				templateUrl: 'views/settings.html',
 				controller: 'settingsController'
 			})
+			.when('/',{
+				templateUrl: 'views/settings.html',
+				controller: 'settingsController'
+			})
 
 	}])
 
