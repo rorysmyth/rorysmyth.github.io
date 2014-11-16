@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Voicemail",
+    "greetings":[
+      {
+        "id":0,
+        "name":"english waiting",
+        "status": true,
+        "numbers":[0,1,2,3]
+      },
+      {
+        "id":1,
+        "name":"german waiting",
+        "status": true,
+        "numbers":[1,3]
+      }
+    ]
+  },
+  {
+    "name": "Wall Greeting",
+    "greetings":[
+      {
+        "id":0,
+        "name":"english wall greeting",
+        "status": true,
+        "numbers":[1,2,3]
+      },
+      {
+        "id":1,
+        "name":"german wall greeting",
+        "status": true,
+        "numbers":[1,3]
+      }
+    ]
+  },
+  {
+    "name": "Hold",
+    "greetings":[
+      {
+        "id":0,
+        "name":"english hold",
+        "status": true,
+        "numbers":[1,2,3]
+      },
+      {
+        "id":1,
+        "name":"german hold",
+        "status": true,
+        "numbers":[1,3]
+      },
+      {
+        "id":2,
+        "name":"french hold",
+        "status": false,
+        "numbers":[]
+      }
+    ]
+  },
+  {
+    "name": "Business hours",
+    "greetings":[
+      {
+        "id":1,
+        "name":"english business hours",
+        "status": true,
+        "numbers":[1,2,3]
+      },
+      {
+        "id":2,
+        "name":"german business hours",
+        "status": true,
+        "numbers":[1,3]
+      }
+    ]
+  },
+  {
+    "name": "Out of hours voicemail",
+    "greetings":[
+      {
+        "id":1,
+        "name":"english out of hours",
+        "status": true,
+        "numbers":[1,2,3]
+      },
+      {
+        "id":2,
+        "name":"german out of hours",
+        "status": true,
+        "numbers":[1,3]
+      }
+    ]
+  },
+  {
+    "name": "No voicemail available",
+    "greetings":[
+      {
+        "id":1,
+        "name":"english no voicemail available",
+        "status": true,
+        "numbers":[1,2,3]
+      },
+      {
+        "id":2,
+        "name":"german no voicemail available",
+        "status": true,
+        "numbers":[1,3]
+      }
+    ]
+  }
+]

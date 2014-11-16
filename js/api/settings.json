@@ -1,0 +1,9 @@
+{
+	"enableVoice":true,
+	"allowOutboundCalls":true,
+	"newLiveCallRecordingsArePublic":false,
+	"onlyRouteCallsDuringBusinessHours":true,
+	"agentWrapUpAfterCalls":false,
+	"agentConfirmationWhenForwarding":true
+}
+	

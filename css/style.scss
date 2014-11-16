@@ -74,6 +74,7 @@ body.debug {
 		background:#e7e7e7;
 	}
 	.sub {
+		// display:none;
 		width:290px;
 		height:100%;
 		background:#f8f8f8;
@@ -86,6 +87,7 @@ body.debug {
 #work {
 
 	margin-left:390px;
+	// margin-left:90px;
 	margin-top:82px;
 	padding-right:40px;
 
@@ -208,10 +210,12 @@ select {
 
 .title-action {
 	h4,
+	h3,
 	a.action {
 		display: inline;
 	}
-	h4, {
+	h4,
+	h3, {
 		line-height: 30px;
 	}
 	a.action {

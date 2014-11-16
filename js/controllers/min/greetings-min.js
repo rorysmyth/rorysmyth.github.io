@@ -1,0 +1,1 @@
+app.controller("greetingsController",function(t,n,o){t.ipsum=o.ipsum,t.test=function(){n.log("this")}});

@@ -1,0 +1,1 @@
+app.directive("radioButton",function(){return{restrict:"E",templateUrl:"templates/toggle.html",scope:{state:"@"},controller:function(t,e,r,o){e.state=r.state}}});

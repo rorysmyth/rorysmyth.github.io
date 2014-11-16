@@ -1,0 +1,12 @@
+[
+	{
+		"id":0,
+		"name":"Support Group",
+		"agents":15
+	},
+	{
+		"id":1,
+		"name":"Customer Care Group",
+		"agents":5
+	}
+]

@@ -1,0 +1,1 @@
+app.controller("associatedNumbersController",function(n,e,u,r){r.get("numbers").then(function(e){n.numbers=e}),n.isAttached=function(n,e){return _.include(n,e)},n.toggleNumber=function(n,u){return _.include(n.numbers,u)?(e.log(),void n.numbers.splice(n.numbers.indexOf(u),1)):(n.numbers.push(u),void e.log(n.numbers))}});

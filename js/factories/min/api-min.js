@@ -1,0 +1,1 @@
+app.factory("apiService",function(e,n,t){return{get:function r(i){var o=e.defer();return t(function(){n.get("/js/api/"+i+".json").then(function(e){o.resolve(e.data)})},30),o.promise}}});

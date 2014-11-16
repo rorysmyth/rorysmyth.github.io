@@ -1,4 +1,7 @@
-<h3 class="t-40 b-10">IVR Menus</h3>
+<div class="row t-40 b-10 title-action">
+	<h3>IVR Menus</h3>
+	<a href="#" class="action">add new menu</a>
+</div>
 <!-- capsule parent -->
 	<div class="menus">
 		
@@ -35,7 +38,7 @@
 								<span class="action">{{number.name}}</span> ({{number.number}})
 							</span>
 							<div class="col w-80 t-5 right">
-								<div class="radio-button" ng-click="toggleNumber(menu, number.id)" ng-class="{'active': isAttached(menu.numbers, number.id) }">
+								<div class="radio-button" ng-click="toggleNumber(menu.numbers, number)" ng-class="{'active': isAttached(menu.numbers, number) }">
 									<span class="toggle"></span>
 								</div>
 							</div>

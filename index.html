@@ -5,9 +5,37 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-route.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-resource.min.js"></script>
 	<script type="text/javascript" src="js/truncate.js"></script>
-	<script type="text/javascript" src="js/ivrMenuController.js"></script>
 	<script type="text/javascript" src="js/underscore.min.js"></script>
+	
+	<!-- angular module and config -->
+	<script type="text/javascript" src="js/modules/init.js"></script>
+	<script type="text/javascript" src="js/config/init.js"></script>
+	
+	<!-- angular factories -->
+	<script type="text/javascript" src="js/factories/ipsum.js"></script>
+	<script type="text/javascript" src="js/factories/api.js"></script>
+
+	<!-- angular controllers -->
+	<script type="text/javascript" src="js/controllers/associated-numbers.js"></script>
+	<script type="text/javascript" src="js/controllers/debug.js"></script>
+	<script type="text/javascript" src="js/controllers/dev.js"></script>
+	<script type="text/javascript" src="js/controllers/ivr-menu.js"></script>
+	<script type="text/javascript" src="js/controllers/nav.js"></script>
+	<script type="text/javascript" src="js/controllers/numbers.js"></script>
+	<script type="text/javascript" src="js/controllers/route.js"></script>
+	<script type="text/javascript" src="js/controllers/settings.js"></script>
+	<script type="text/javascript" src="js/controllers/group-routing.js"></script>
+	<script type="text/javascript" src="js/controllers/greetings.js"></script>
+
+	<!-- angular directives -->
+	<script type="text/javascript" src="js/directives/ivr-dropdown.js"></script>
+	<script type="text/javascript" src="js/directives/ivr-menus.js"></script>
+	<script type="text/javascript" src="js/directives/numbers.js"></script>
+	<script type="text/javascript" src="js/directives/save-controls.js"></script>
+	<script type="text/javascript" src="js/directives/greetings.js"></script>
+
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body ng-class="{'debug': debug === true}">

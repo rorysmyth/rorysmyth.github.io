@@ -1,0 +1,251 @@
+<div class="row t-40 b-10 title-action">
+	<h3>Numbers</h3>
+	<a href="#" class="action">add new number</a>
+</div>
+
+<div class="menus">
+	
+	<!-- capsule -->
+	<div class="capsule" ng-class="{open:isActive($index)}" ng-repeat="number in numbers">
+		
+		<h3 ng-click="setActive($index); setTab(1)" class="header">{{number.number}} <span class="sub">{{number.name}}</span></h3>
+		
+		<!-- tabs -->
+		<div class="tab b-40 t-10">
+			<ul>
+				<li ng-class="{ 'active':isActiveTab(1) }" ng-click="setTab(1)">Settings</li>
+				<li ng-class="{ 'active':isActiveTab(2) }" ng-click="setTab(2)">Voicemail</li>
+				<li ng-class="{ 'active':isActiveTab(3) }" ng-click="setTab(3)">Routing</li>
+			</ul>
+		</div>
+		<!-- tabs -->
+
+		<!-- routing -->
+		<div ng-show="activeTab === 3">
+			
+			<div class="row t-40">
+				<h4 class="b-10">Enable IVR?</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-60 l-260">
+					<div class="radio-button" ng-click="toggleIvr(number)" ng-class="{'active': number.ivr === true }">
+						<span class="toggle"></span>
+					</div>
+				</div>
+			</div>
+
+			
+			<div ng-show="number.ivr" class="row t-40">
+				<h4 class="b-10">IVR menu</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<select ng-init="ivrMenu = number.ivr" ng-model="ivrMenu" ng-options="ivr.id as ivr.name for ivr in ivrs">
+					</select>
+				</div>
+			</div>
+
+			<!-- group routing -->
+			<div ng-show="!number.ivr">
+				
+				<div class="row t-40 b-10">
+					<h4>Group routing</h4>
+				</div>
+
+				<ul class="table">
+					<li ng-repeat="group in groups">
+						<span class="seg">
+							<span class="action">{{group.name}}</span> ({{group.agents}} agents)
+						</span>
+						<div class="col w-60 t-5 right" ng-controller="groupRoutingController">
+							<div class="radio-button" ng-click="toggleGroup(number, group)" ng-class="{'active': isAttached(number, group) }">
+								<span class="toggle"></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+			</div>		
+			<!-- group routing -->
+
+
+
+		</div>
+		<!-- routing -->
+
+		<!-- settings -->
+		<div ng-show="activeTab === 1">
+			<div class="row">
+				<h4 class="b-10">Nickname</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<input type="text" value="{{number.name}}">
+				</div>
+			</div>
+
+			<div class="row t-40">
+				<h4 class="b-10">Brand</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<select ng-init="selectedBrand = number.brand" ng-model="selectedBrand" ng-options="brand.id as brand.name for brand in brands">
+					</select>
+				</div>
+			</div>
+
+			<div class="row t-40 border">
+				<h4 class="b-10">Record Calls</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-60 l-260">
+					<radio-button state="{{number.recordCalls}}"></radio-button>
+				</div>
+			</div>
+
+			<div class="row t-40">
+				<h4 class="b-10">Caller ID number</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<select ng-init="callerId = number.callerId" ng-model="callerId" ng-options="number.id as number.name for number in numbers">
+					</select>
+				</div>
+			</div>
+
+			<div class="row t-40 border">
+				<h4 class="b-10">Fallover number</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<select ng-init="falloverNumber = number.fallover" ng-model="falloverNumber" ng-options="number.id as number.name for number in numbers">
+					</select>
+				</div>
+			</div>
+
+			<div class="row t-40">
+				<h4 class="b-10">Wall greeting</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<div class="audio">
+						<select ng-init="wallGreeting = number.wallGreeting" ng-model="wallGreeting" ng-options="greeting.id as greeting.name for greeting in greetings[1].greetings">
+					</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row t-40 b-40">
+				<h4 class="b-10">Hold greeting</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<div class="audio">
+						<select ng-init="holdGreeting = number.holdGreeting" ng-model="holdGreeting" ng-options="greeting.id as greeting.name for greeting in greetings[2].greetings"><select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- settings -->
+
+		<!-- voicemail -->
+		<div ng-show="activeTab === 2">
+			
+			<div class="row t-40 ">
+				<h4 class="b-10">Enable voicemail</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-60 l-260">
+					<radio-button state="{{number.voicemail}}"></radio-button>
+				</div>
+			</div>
+
+			<div class="row t-40">
+				<h4 class="b-10">Transcribe voicemails</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-60 l-260">
+					<radio-button state="{{number.transcribeVoicemail}}"></radio-button>
+				</div>
+			</div>
+
+			<div class="row border t-40">
+				<h4 class="b-10">Voicemail deletion</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<select ng-init="voicemalDeletion = number.voicemailDeletion" ng-model="voicemalDeletion" ng-options="month.id as month.value for month in months">
+					</select>
+				</div>
+			</div>
+
+			<div class="row t-40 b-40">
+				<h4 class="b-10">Voicemail greeting</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<div class="audio">
+						<select ng-init="voicemailGreeting = number.voicemailGreeting" ng-model="voicemailGreeting" ng-options="greeting.id as greeting.name for greeting in greetings[0].greetings"><select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row t-40 b-40">
+				<h4 class="b-10">Business hours voicemail</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<div class="audio">
+						<select ng-init="businessHoursGreeting = number.businessHoursGreeting" ng-model="businessHoursGreeting" ng-options="greeting.id as greeting.name for greeting in greetings[3].greetings"><select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row t-40 b-40">
+				<h4 class="b-10">Out of hours voicemail</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<div class="audio">
+						<select ng-init="outOfHoursGreeting = number.outOfHoursGreeting" ng-model="outOfHoursGreeting" ng-options="greeting.id as greeting.name for greeting in greetings[4].greetings"><select>
+					</div>
+				</div>
+			</div>
+
+			<div class="row t-40 b-40">
+				<h4 class="b-10">No voicemail available</h4>
+				<div class="col w-470">
+					<p>{{ipsum | words: 20}}</p>
+				</div>
+				<div class="col w-270 l-50">
+					<div class="audio">
+						<select ng-init="noVoicemailAvailable = number.noVoicemailAvailableGreeting" ng-model="noVoicemailAvailable" ng-options="greeting.id as greeting.name for greeting in greetings[5].greetings"><select>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- voicemail -->
+
+		<save-controls></save-controls>
+
+	<!-- /capsule -->
+	</div>
+
+<!-- /menus -->
+</div>
