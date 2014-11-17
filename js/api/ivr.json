@@ -5,73 +5,79 @@
       "ivr":[
          {
             "name":"Main menu",
-            "greeting":"Customer care greeting",
+            "greeting":"Main greeting (English)",
             "routes":[
                {
                   "id":1,
                   "keypress":1,
-                  "action":"number",
-                  "value":"+1 415 9953"
+                  "action":"Voicemail",
+                  "value":""
                },
                {
                   "id":2,
                   "keypress":2,
-                  "action":"group",
+                  "action":"Group",
                   "value":"Customer Care"
                },
                {
                   "id":3,
-                  "keypress":4,
-                  "action":"number",
+                  "keypress":3,
+                  "action":"Number",
                   "value":"+1 415 9953"
+               },
+               {
+                  "id":3,
+                  "keypress":4,
+                  "action":"IVR menu",
+                  "value":"Tech support menu"
+               },
+               {
+                  "id":3,
+                  "keypress":5,
+                  "action":"IVR menu",
+                  "value":"Complaints menu"
                }
             ]
          },
          {
             "name":"Tech support menu",
-            "greeting":"tech support greeting",
+            "greeting":"Tech support greeting (English)",
             "routes":[
                {
                   "id":1,
-                  "keypress":3,
-                  "action":"number",
-                  "value":"+1 415 9953"
+                  "keypress":1,
+                  "action":"Group",
+                  "value":"Repairs"
                },
                {
                   "id":2,
-                  "keypress":4,
-                  "action":"number",
-                  "value":"+1 415 9953"
+                  "keypress":2,
+                  "action":"Number",
+                  "value":"+1 555 666 777"
+               },
+               {
+                  "id":3,
+                  "keypress":3,
+                  "action":"Group",
+                  "value":"Support desk"
                }
             ]
          },
          {
             "name":"Complaints menu",
-            "greeting":"complaints greeting",
+            "greeting":"Complaints greeting (English)",
             "routes":[
                {
                   "id":1,
-                  "keypress":3,
-                  "action":"number",
-                  "value":"+1 415 9953"
+                  "keypress":1,
+                  "action":"Group",
+                  "value":"customer complaints"
                },
                {
                   "id":2,
-                  "keypress":4,
-                  "action":"number",
-                  "value":"+1 415 9953"
-               },
-               {
-                  "id":3,
-                  "keypress":5,
-                  "action":"number",
-                  "value":"+1 415 9953"
-               },
-               {
-                  "id":4,
-                  "keypress":6,
-                  "action":"group",
-                  "value":"customer care"
+                  "keypress":2,
+                  "action":"Voicemail",
+                  "value":""
                }
             ]
          }
@@ -89,7 +95,7 @@
                {
                   "id":1,
                   "keypress":2,
-                  "action":"number",
+                  "action":"Number",
                   "value":"+1 415 9953"
                }
             ]
@@ -101,13 +107,13 @@
                {
                   "id":1,
                   "keypress":3,
-                  "action":"number",
+                  "action":"Number",
                   "value":"+1 415 9953"
                },
                {
                   "id":2,
                   "keypress":4,
-                  "action":"number",
+                  "action":"Number",
                   "value":"+1 415 9953"
                }
             ]
@@ -126,7 +132,7 @@
                {
                   "id":1,
                   "keypress":2,
-                  "action":"number",
+                  "action":"Number",
                   "value":"+1 415 9953"
                }
             ]

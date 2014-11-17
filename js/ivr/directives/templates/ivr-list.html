@@ -28,7 +28,7 @@
 			-->
 			<div ng-show="activeTab === 2">
 				<div class="row t-40 b-10">
-					<h4>Numbers ({{selectedIvr.routes.length}})</h4>
+					<h4>Numbers ({{activeIvrMenu.routes.length}})</h4>
 				</div>
 				
 				<div class="row" ng-controller="associatedNumbersController">
@@ -86,12 +86,12 @@
 			-->
 			<div class="row" ng-show="activeTab === 1">
 			
-
 				<!-- ivr dropdown select -->
 				<div class="col w-p-20">
 					<h4 class="b-10">IVR Menu</h4>
-					<select ng-init="selectedIvr = menu.ivr[0]" ng-model="selectedIvr" ng-options="ivr.name for ivr in menu.ivr">
-					</select>
+					<ul class="ivr-menu-list">
+						<li ng-click="setIvrMenu(menu)" ng-class="{'active': isActiveIvrMenu(menu) }" ng-repeat="menu in menu.ivr">{{menu.name}}</li>
+					</ul>
 				</div>
 				<!-- /ivr dropdown select -->
 		
@@ -105,7 +105,7 @@
 							<p>{{ ipsum | words : 15}}</p>
 						</div>
 						<div class="col w-p-40 p-l-30">
-							<input type="text" value="{{selectedIvr.name}}">
+							<input type="text" value="{{activeIvrMenu.name}}">
 						</div>
 					</div>
 					<!-- /name -->
@@ -120,7 +120,7 @@
 						
 							<div class="audio">
 								<select name="" id="">
-									<option ng-bind="selectedIvr.greeting" value=""></option>
+									<option ng-bind="activeIvrMenu.greeting" value=""></option>
 								</select>
 							</div>
 							
@@ -130,14 +130,14 @@
 
 					<!-- active routes -->
 					<div class="row t-40 b-10 title-action">
-						<h4>Active Routes ({{selectedIvr.routes.length}})</h4>
+						<h4>Active Routes ({{activeIvrMenu.routes.length}})</h4>
 						<a href="#" class="action">add new route</a>
 					</div>
 
 
 					<div class="row" ng-controller="ivrRouteController">
 						<ul class="table">
-							<li ng-repeat="route in selectedIvr.routes">
+							<li ng-repeat="route in activeIvrMenu.routes">
 								<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
 								<span class="seg">
 									route to <span class="action">{{route.action}}</span> <span class="ul">{{route.value}}</span>

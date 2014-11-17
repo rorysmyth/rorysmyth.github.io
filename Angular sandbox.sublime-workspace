@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"pos",
+				"pos:a	position:absolute"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"webkit-tranf",
+				"webkit-transform"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"route",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"ivrMenus",
+				"ivrMenusJs"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
 				"http",
 				"verbose_$http	AngularJS"
 			],
@@ -32,14 +72,6 @@
 				"text-indent"
 			],
 			[
-				"margin",
-				"margin-top"
-			],
-			[
-				"border",
-				"border"
-			],
-			[
 				"filter",
 				"verbose_$filter	AngularJS"
 			],
@@ -54,10 +86,6 @@
 			[
 				"text",
 				"text-decoration"
-			],
-			[
-				"pos",
-				"pos:a	position:absolute"
 			],
 			[
 				"wid",
@@ -75,19 +103,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "templates/ivr-menu.html",
-			"settings":
-			{
-				"buffer_size": 3304,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 207.0,
+		"height": 287.0,
 		"selected_items":
 		[
 			[
@@ -115,7 +135,7 @@
 				"Set Syntax: Sass"
 			]
 		],
-		"width": 530.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -138,13 +158,137 @@
 	[
 		"/Users/rsmyth/Sites/sandbox.dev",
 		"/Users/rsmyth/Sites/sandbox.dev/js",
-		"/Users/rsmyth/Sites/sandbox.dev/templates"
+		"/Users/rsmyth/Sites/sandbox.dev/js/associated-numbers/controllers",
+		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives",
+		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/templates",
+		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/views",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/controllers",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/templates",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/views",
+		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives",
+		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/templates",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controllers",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings/controllers",
+		"/Users/rsmyth/Sites/sandbox.dev/js/toggle-switch/directives"
 	],
 	"file_history":
 	[
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/numbers.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/templates/numbers.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/toggle-switch/directives/toggle-switch.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings/controllers/settings.js",
 		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/greetings.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings/views/settings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/templates/greetings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/saving.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controllers/saving-controller.js",
+		"/Users/rsmyth/Sites/sandbox.dev/index.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controller/saving-controller.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/ivr.json",
+		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.css",
+		"/Users/rsmyth/Sites/sandbox.dev/bower_components/angular/bower.json",
+		"/Users/rsmyth/Sites/sandbox.dev/css/style.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-route.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-dropdown.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/save-controls.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/templates/save-controls.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/controllers/numbers.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsule.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/config.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/modal.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/manipulation/var/rcheckableType.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/tab.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-nested-capsules.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-nested-capsules.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/form-controls/save-controls.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/associated-numbers/controllers/associated-numbers.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/templates/save-controls.html",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/greetings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/ivr-menu.html",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/ivr-dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/debug.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/margins.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/numbers.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/numbers.js",
+		"/Users/rsmyth/Sites/sandbox.dev/views/numbers.html",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/numbers.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/ivr-dropdown.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/ivr-menu.js",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/save-controls.html",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/modals/edit-route.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/numbers.json",
+		"/Users/rsmyth/Sites/sandbox.dev/inc/nav.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.css",
+		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.css",
+		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/offset.js",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/edit-route-modal.html",
+		"/Users/rsmyth/Sites/sandbox.dev/views/ivr-dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/config/init.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/edit-route-modal.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/dev.js",
+		"/Users/rsmyth/Sites/sandbox.dev/inc/debug.html",
+		"/Users/rsmyth/Sites/sandbox.dev/views/ivr.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/toggle-switch.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/route.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/settings.js",
+		"/Users/rsmyth/Sites/sandbox.dev/views/settings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/greetings.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/settings.json",
+		"/Users/rsmyth/Sites/sandbox.dev/greetings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/group-routing.js",
+		"/Users/rsmyth/Sites/sandbox.dev/template.html",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/radio-button.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/radio-button.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/greetings.js",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/toggle.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/radio-button.scssc",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/min/radio-button-min.js",
+		"/Users/rsmyth/Sites/sandbox.dev/views/greetings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/associated-numbers.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/greetings.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/save-controls.js",
+		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/dimensions.js",
+		"/Users/rsmyth/Sites/sandbox.dev/logs/error_log",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/min/dropdown-min.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/directives/ivr-menus.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/months.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/factories/api.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/groups.json",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/modules/init.js",
+		"/Users/rsmyth/Library/Application Support/Sublime Text 3/Packages/User/angular log.sublime-snippet",
+		"/Users/rsmyth/Sites/sandbox.dev/js/resources/api.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/brands.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/nav.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/factories/ipsum.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/numbers.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/greetings.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr.json",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/_index.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/underscore-min.map",
+		"/Users/rsmyth/Downloads/underscore-min (1).map",
+		"/Users/rsmyth/Downloads/underscore-min.map",
+		"/Users/rsmyth/Sites/sandbox.dev/js/underscore.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/truncate.js",
+		"/Users/rsmyth/Sites/sandbox.dev/templates/test.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController-2.js",
 		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/avatar-animation.scssc",
 		"/Users/rsmyth/Sites/sandbox.dev/js/min/voicemailController-min.js",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/data/accepts.js",
@@ -152,42 +296,15 @@
 		"/Users/rsmyth/Sites/sandbox.dev/Angular sandbox.sublime-project",
 		"/Users/rsmyth/Sites/angular.dev/js/controllers.js",
 		"/Users/rsmyth/Sites/angular.dev/index.html",
-		"/Users/rsmyth/Sites/sandbox.dev/template.html",
-		"/Users/rsmyth/Sites/sandbox.dev/greetings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/greetingsController.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/greetings.json",
 		"/Users/rsmyth/Sites/sandbox.dev/greetings2.html",
-		"/Users/rsmyth/Sites/sandbox.dev/saving.html",
-		"/Users/rsmyth/Sites/sandbox.dev/css/tab.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/ivr-menu.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/voicemail.json",
 		"/Users/rsmyth/Sites/sandbox.dev/js/controllers.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/voicemailController.js",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/settings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/using.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/routingExample.js",
-		"/Users/rsmyth/Sites/sandbox.dev/routing.html",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/active.html",
-		"/Users/rsmyth/Sites/sandbox.dev/css/tab.css",
-		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.css",
-		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/index.html",
-		"/Users/rsmyth/Sites/sandbox.dev/css/style.css",
-		"/Users/rsmyth/Sites/sandbox.dev/css/margins.css",
-		"/Users/rsmyth/Sites/sandbox.dev/js/data.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/colors.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/voice-animation.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.css",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
-		"/Users/rsmyth/Sites/sandbox.dev/response.json",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/ivr-routes.html",
-		"/Users/rsmyth/Sites/sandbox.dev/config.codekit",
-		"/Users/rsmyth/Sites/sandbox.dev/js/templates/ivr-menu.html",
-		"/Users/rsmyth/Downloads/zenforce/public/app.scss",
-		"/Users/rsmyth/Downloads/zenforce/public/templates/zen-force.hdbs",
-		"/Users/rsmyth/Downloads/zenforce/public/templates/layout.hdbs",
-		"/Users/rsmyth/Sites/sandbox.dev/css/index.html"
+		"/Users/rsmyth/Sites/sandbox.dev/routing.html"
 	],
 	"find":
 	{
@@ -205,6 +322,54 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"+	",
+			"-",
+			"enable",
+			"<div class=\"col w-60 l-200\">",
+			"<div class=\"col w-40 p-l-50\">",
+			"<div class=\"col w-200 l-60\">",
+			"queue",
+			"quesue",
+			"maximun",
+			"maximnu",
+			"<div class=\"col w-590\">",
+			"col w-60 l-260",
+			"l-50",
+			"w-270",
+			"w-470",
+			"meta",
+			"w-",
+			"route",
+			"header",
+			"debug",
+			"routes",
+			"input",
+			"}\n",
+			"voicemail",
+			"agentConfirmationWhenForwarding",
+			"h4",
+			"title-ac",
+			"associated",
+			"hover",
+			"directive",
+			"ivrMenu",
+			"$route",
+			"navController\n\n\n",
+			"animation",
+			"route-table",
+			"ivrMenuController",
+			"ivrController",
+			"menus",
+			"ivrMenuCtrl.",
+			"ivr men",
+			"current",
+			"currentIVr",
+			"name",
+			"routes",
+			"name",
+			"t-0",
+			"clear",
+			"800px",
 			"action",
 			"controller",
 			"grey",
@@ -222,6 +387,16 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"<div class=\"col w-p-40 p-l-50\">",
+			"<div class=\"col w-40 p-l-50\">",
+			"<div class=\"col w-p-60\">",
+			"col w-p-40 p-l-50",
+			"p-l-50",
+			"w-p-40",
+			"w-p-60",
+			"table",
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -234,42 +409,6 @@
 		{
 			"sheets":
 			[
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 0,
-					"file": "templates/ivr-menu.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3304,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3182,
-								3182
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": false
-						},
-						"translation.x": 85.0,
-						"translation.y": 334.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -290,18 +429,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -318,7 +450,7 @@
 	"project": "Angular sandbox.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -327,7 +459,163 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"index.html"
+			],
+			[
+				"styl",
+				"css/style.scss"
+			],
+			[
+				"margin",
+				"css/margins.scss"
+			],
+			[
+				"mar",
+				"css/margins.scss"
+			],
+			[
+				"sty",
+				"css/style.scss"
+			],
+			[
+				"tyl",
+				"css/style.css"
+			],
+			[
+				"style",
+				"css/style.css"
+			],
+			[
+				"margins",
+				"css/margins.scss"
+			],
+			[
+				"caps",
+				"css/capsule.scss"
+			],
+			[
+				"numbers",
+				"js/api/numbers.json"
+			],
+			[
+				"capsu",
+				"css/capsule.scss"
+			],
+			[
+				"save",
+				"templates/save-controls.html"
+			],
+			[
+				"modal",
+				"css/modal.scss"
+			],
+			[
+				"dev",
+				"js/controllers/dev.js"
+			],
+			[
+				"ivr",
+				"js/api/ivr.json"
+			],
+			[
+				"moda",
+				"css/modal.scss"
+			],
+			[
+				"number",
+				"js/api/numbers.json"
+			],
+			[
+				"greeting.son",
+				"js/api/greetings.json"
+			],
+			[
+				"templates/gre",
+				"templates/greetings.html"
+			],
+			[
+				"debug",
+				"inc/debug.html"
+			],
+			[
+				"directive/",
+				"js/directives/radio-button.js"
+			],
+			[
+				"toggle",
+				"templates/toggle.html"
+			],
+			[
 				"style.scss",
+				"css/style.scss"
+			],
+			[
+				"directives/",
+				"js/directives/ivr-dropdown.js"
+			],
+			[
+				"numbers.json",
+				"js/api/numbers.json"
+			],
+			[
+				"templates/",
+				"templates/ivr-dropdown.html"
+			],
+			[
+				"dropdow",
+				"templates/ivr-dropdown.html"
+			],
+			[
+				"number.js",
+				"js/directives/numbers.js"
+			],
+			[
+				"radi",
+				"css/radio-button.scss"
+			],
+			[
+				"table",
+				"css/route-table.scss"
+			],
+			[
+				"numberso",
+				"js/api/numbers.json"
+			],
+			[
+				"numbers.jso",
+				"js/numbers.json"
+			],
+			[
+				"nav",
+				"inc/nav.html"
+			],
+			[
+				"marg",
+				"css/margins.scss"
+			],
+			[
+				"route",
+				"css/route-table.scss"
+			],
+			[
+				"route-ta",
+				"css/route-table.scss"
+			],
+			[
+				"style.scs",
+				"css/style.scss"
+			],
+			[
+				"tabs.",
+				"css/tab.scss"
+			],
+			[
+				"rote",
+				"css/route-table.scss"
+			],
+			[
+				"style.",
 				"css/style.scss"
 			],
 			[
@@ -337,10 +625,6 @@
 			[
 				"tab",
 				"css/tab.scss"
-			],
-			[
-				"route",
-				"css/route-table.scss"
 			],
 			[
 				"cap",
@@ -377,7 +661,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 256.0,
+	"side_bar_width": 244.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
