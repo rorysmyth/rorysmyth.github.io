@@ -1,1 +1,0 @@
-!function(){var e=angular.module("greetingsApp",["ngRoute"]);e.controller("greetingsController",["$scope","$log","$http",function(e,n,t){t.get("/js/greetings.json").success(function(n){e.greetings=n})}])}();

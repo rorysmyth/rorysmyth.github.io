@@ -1,1 +1,0 @@
-app.controller("groupRoutingController",function(n,o,u,i){i.get("numbers").then(function(o){n.numbers=o}),n.isAttached=function(n,o){var u=o.id;return _.include(n.groupRouting,u)},n.toggleGroup=function(n,o){return _.include(n.groupRouting,o.id)?void n.groupRouting.splice(n.groupRouting.indexOf(o.id),1):void n.groupRouting.push(o.id)}});

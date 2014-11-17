@@ -1,1 +1,0 @@
-app.controller("debugController",function(e,o,u){u.debug=!1,e.toggleDebug=function(){return 0==u.debug?void(u.debug=!0):void(u.debug=!1)}});

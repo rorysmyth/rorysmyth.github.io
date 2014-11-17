@@ -1,1 +1,0 @@
-app.controller("settingsController",function(n,o,t){n.ipsum=t.ipsum});
