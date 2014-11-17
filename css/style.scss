@@ -100,7 +100,8 @@ body.debug {
 
 	.inner {
 		// to allow for rounded sizes
-		width: 852px; 	}
+		// width: 852px;
+	}
 
 }
 
@@ -202,7 +203,7 @@ select {
 		content:"";
 		display: block;
 		position: absolute;
-		top:4px;
+		top:5px;
 		left:5px;
 		width:23px;
 		height:23px;
@@ -271,6 +272,24 @@ button {
 	&.grey {
 		background:#ddd;
 		color:#fff;
+	}
+	&.play,
+	&.record {
+		height:31px;
+		padding-top:9px;
+		i {
+			font-size: 10px;
+		}
+	}
+	&.record {
+		i {
+			color:#e74c3c;
+		}
+	}
+	&.play {
+		i {
+			color:#555;
+		}
 	}
 }
 

@@ -16,8 +16,28 @@
 	}
 }
 
+@for $i from 0 through 100 {
+	.p-l-#{$i}{
+		padding-left: #{$i}px !important;
+		
+		// .audio {
+		// 	&:after {
+		// 		$p: $i+5;
+		// 		left: #{$p}px;
+		// 	}
+		// }
+		
+	}
+}
+
 @for $i from 0 through 780 {
 	.w-#{$i}{
 		width: #{$i}px;
+	}
+}
+
+@for $i from 0 through 100 {
+	.w-p-#{$i}{
+		width: $i*1%;
 	}
 }

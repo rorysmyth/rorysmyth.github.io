@@ -1,0 +1,55 @@
+<div class="row t-40 b-10 title-action">
+	<h3>Greetings</h3>
+	<a href="#" class="action">add new greeting</a>
+</div>
+
+<div class="menus">
+	<div class="row" ng-repeat="greetingGroup in greetings">
+		
+		<h3 class="b-10" ng-class="{'t-40':$index != 0}">{{greetingGroup.name}}</h3>
+		
+			<!-- single greeting -->
+			<div class="capsule" ng-class="{'open':isActive($parent.$index,$index), 'inactive': !greeting.status}" ng-repeat="greeting in greetingGroup.greetings">
+				<h3 ng-click="setActive($parent.$index,$index)" class="header">{{greeting.name}} <span class="sub">{{greeting.status ? "" : "inactive"}}</span> </h3>
+
+				<div class="row t-10">
+				<h4 class="b-10">Name</h4>
+					<div class="col w-p-35">
+						<input type="text" value="{{greeting.name}}">
+					</div>
+					<div class="col w-p-65 p-l-15">
+						<button class="play white">
+							<i class="fa fa-play"></i> play
+						</button>
+						<button class="record white l-10">
+							<i class="fa fa-circle"></i> record
+						</button>
+					</div>
+				</div>
+
+
+				<div class="row t-30 b-10">
+					<h4>Associated numbers</h4>
+				</div>
+				<div ng-controller="associatedNumbersController">
+					<ul class="table">
+						<li ng-repeat="number in numbers" class="number {{number.locale}} ">
+							<span class="seg">
+								<span class="action">{{number.name}}</span> ({{number.number}})
+							</span>
+							<div class="col w-80 t-5 right">
+								<div class="radio-button" ng-click="toggleNumber(greeting.numbers, number)" ng-class="{'active': isAttached(greeting.numbers, number) }">
+									<span class="toggle"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<save-controls></save-controls>
+
+			</div>
+			<!-- single greeting -->
+
+	</div>
+</div>
