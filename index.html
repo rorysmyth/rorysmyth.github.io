@@ -35,10 +35,11 @@
 	<script type="text/javascript" src="js/directives/numbers.js"></script>
 	<script type="text/javascript" src="js/directives/save-controls.js"></script>
 	<script type="text/javascript" src="js/directives/greetings.js"></script>
+	<script type="text/javascript" src="js/directives/toggle-switch.js"></script>
 
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body ng-class="{'debug': debug === true}">
+<body ng-class="{'debug': debug === true, 'modal-active': modal.editing === true}">
 
 <div id="work">
 
@@ -74,6 +75,10 @@
 </div>
 
 <div id="header">
+</div>
+
+<div>
+	<ng-include src="'templates/modals/edit-route.html'"></ng-include> 
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>

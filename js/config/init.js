@@ -4,7 +4,8 @@ app.config(function($routeProvider,$resourceProvider) {
 		templateUrl: 'views/ivr.html'
 	})
 	.when('/ivr/dropdown',{
-		templateUrl: 'views/ivr-dropdown.html'
+		templateUrl: 'views/ivr-dropdown.html',
+		controller:'ivrMenuController'
 	})
 	.when('/settings',{
 		templateUrl: 'views/settings.html',

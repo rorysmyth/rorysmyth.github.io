@@ -9,6 +9,13 @@
 	-webkit-transition:max-height 0.4s;
 	position:relative;
 	border:1px solid #eee;
+	&.inactive {
+		background:rgba( #f8f8f8, .5 );
+		border:1px solid rgba(#eee, .5 );
+		h3 {
+			opacity:0.3;
+		}
+	}
 	&:after {
 		position: absolute;
 		top:23px;
@@ -27,6 +34,15 @@
 		&.header {
 			line-height: 60px;
 			height:60px;
+			$locales: us gb ie;
+
+			@each $locale in $locales {
+				&.#{$locale}{
+					padding-left:25px;
+					background: url('../img/#{$locale}.png') center left no-repeat;
+				}
+			}
+
 		}
 	}
 	&.open {

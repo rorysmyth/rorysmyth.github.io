@@ -1,4 +1,4 @@
-app.controller('ivrMenuController', function(ipsumService, $scope, $route, $routeParams, $location){
+app.controller('ivrMenuController', function(ipsumService, $log, $scope, $route, $routeParams, $location){
 		
 		$scope.$route = $route;
 		$scope.$location = $location;

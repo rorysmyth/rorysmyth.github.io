@@ -8,7 +8,7 @@
 		<!-- single capsule -->
 		<div id="ivrmenu-{{$index}}" ng-class="{open:isActive($index)}" ng-repeat="menu in ivrMenus" class="capsule">
 
-			<h3 ng-click="setActive($index); setTab(1)" class="header">{{menu.name}}</h3>
+			<h3 ng-click="setActive($index); setTab(1)" class="header">{{menu.name}} <span class="sub">({{menu.ivr.length}} menu levels)</span></h3>
 			
 			<!-- capsule tabs -->
 			<div class="tab b-40 t-10">
@@ -139,7 +139,7 @@
 									route to <span class="action">{{route.action}}</span> {{route.value}}
 								</span>
 								<span class="edit">
-									<span>edit</span><span href="#">delete</span>
+									<span ng-click="editRouteModal(route)">edit</span><span href="#">delete</span>
 								</span>
 							</li>
 						</ul>

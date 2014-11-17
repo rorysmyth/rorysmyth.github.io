@@ -9,13 +9,13 @@
 		<h3 class="b-10" ng-class="{'t-40':$index != 0}">{{greetingGroup.name}}</h3>
 		
 			<!-- single greeting -->
-			<div class="capsule" ng-class="{'open':isActive($parent.$index,$index)}" ng-repeat="greeting in greetingGroup.greetings">
-				<h3 ng-click="setActive($parent.$index,$index)" class="header">{{greeting.name}} <span class="sub">{{greeting.status}}</span> </h3>
+			<div class="capsule" ng-class="{'open':isActive($parent.$index,$index), 'inactive': !greeting.status}" ng-repeat="greeting in greetingGroup.greetings">
+				<h3 ng-click="setActive($parent.$index,$index)" class="header">{{greeting.name}} <span class="sub">{{greeting.status ? "" : "inactive"}}</span> </h3>
 
 				<div class="row t-10">
 				<h4 class="b-10">Name</h4>
 					<div class="col w-200">
-						<input type="text" value="greeting.name">
+						<input type="text" value="{{greeting.name}}">
 					</div>
 				</div>
 
@@ -37,6 +37,8 @@
 						</li>
 					</ul>
 				</div>
+
+				<save-controls></save-controls>
 
 			</div>
 			<!-- single greeting -->

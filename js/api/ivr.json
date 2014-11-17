@@ -1,5 +1,6 @@
 [
    {
+      "id":0,
       "name":"English general menu",
       "ivr":[
          {
@@ -78,6 +79,7 @@
       "numbers":[0,2]
    },
    {
+      "id":1,
       "name":"French general menu",
       "ivr":[
          {
@@ -114,6 +116,7 @@
       "numbers":[1,2]
    },
    {
+      "id":2,
       "name":"German general menu",
       "ivr":[
          {

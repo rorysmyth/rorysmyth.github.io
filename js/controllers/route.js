@@ -1,6 +1,7 @@
 app.controller('routeController', function($scope,$log){
 
-		$scope.activeRoute = null;
+		$scope.activeRoute = 0;
+
 		$scope.setActive = function(route){
 
 			if ($scope.activeRoute === route) {

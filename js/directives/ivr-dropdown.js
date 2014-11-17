@@ -4,7 +4,7 @@ app.directive('ivrDropdown', function(){
 
 			restrict: 'E',
 			templateUrl: 'templates/ivr-dropdown.html',
-			controller: function($log,$scope,$http,ipsumService,apiService){
+			controller: function($log,$scope,$rootScope,$http,ipsumService,apiService){
 				
 				apiService.get('ivr').then(function(ivr) {
 					$scope.ivrMenus = ivr;
@@ -13,6 +13,7 @@ app.directive('ivrDropdown', function(){
 				$scope.ipsum = ipsumService.ipsum;
 				$scope.activeCapsule = null;
 				$scope.activeTab = 1;
+				$scope.editingRoute = false;
 
 				$scope.setActive =  function(capsule){
 
@@ -35,6 +36,11 @@ app.directive('ivrDropdown', function(){
 					return $scope.activeTab === tab;
 				}
 
+				$scope.editRouteModal = function(route){
+					$rootScope.modal = {}
+						$rootScope.modal.editing = true;
+						$rootScope.modal.route = route;
+				}
 
 			}
 		};

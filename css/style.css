@@ -5127,6 +5127,11 @@ table {
   -webkit-transition: max-height 0.4s;
   position: relative;
   border: 1px solid #eee; }
+  .capsule.inactive {
+    background: rgba(248, 248, 248, 0.5);
+    border: 1px solid rgba(238, 238, 238, 0.5); }
+    .capsule.inactive h3 {
+      opacity: 0.3; }
   .capsule:after {
     position: absolute;
     top: 23px;
@@ -5144,6 +5149,15 @@ table {
     .capsule h3.header {
       line-height: 60px;
       height: 60px; }
+      .capsule h3.header.us {
+        padding-left: 25px;
+        background: url("../img/us.png") center left no-repeat; }
+      .capsule h3.header.gb {
+        padding-left: 25px;
+        background: url("../img/gb.png") center left no-repeat; }
+      .capsule h3.header.ie {
+        padding-left: 25px;
+        background: url("../img/ie.png") center left no-repeat; }
   .capsule.open {
     border: 1px solid #78a300;
     background: #fff;
@@ -5291,8 +5305,48 @@ table {
   .radio-button:hover {
     cursor: pointer; }
 
+.modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  .modal .inner {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .modal .inner .form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate3d(-50%, -50%, 0);
+      min-width: 400px;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 30px;
+      border-radius: 5px; }
+      .modal .inner .form h3 {
+        font-size: 16px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+        position: relative;
+        width: 100%; }
+        .modal .inner .form h3 .close {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 30px;
+          height: 30px;
+          text-align: right;
+          cursor: pointer; }
+
 body {
   font-family: "Proxima Nova"; }
+  body.modal-active {
+    overflow: hidden;
+    height: 100%; }
 
 hr {
   display: block;
@@ -5393,6 +5447,13 @@ p {
   border-bottom: 1px solid #ddd;
   padding-bottom: 40px; }
 
+label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+  text-transform: capitalize; }
+
 input[type="text"] {
   width: 100%;
   border: 1px solid #ddd;
@@ -5412,7 +5473,7 @@ select {
   font-size: 13px;
   background: #fff;
   font-family: "Proxima Nova";
-  height: 32px; }
+  height: 34px; }
 
 .col {
   display: inline-block;

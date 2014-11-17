@@ -8,7 +8,7 @@
 	<!-- capsule -->
 	<div class="capsule" ng-class="{open:isActive($index)}" ng-repeat="number in numbers">
 		
-		<h3 ng-click="setActive($index); setTab(1)" class="header">{{number.number}} <span class="sub">{{number.name}}</span></h3>
+		<h3 ng-click="setActive($index); setTab(1)" class="header {{number.locale}}">{{number.number}} <span class="sub">{{number.name}}</span></h3>
 		
 		<!-- tabs -->
 		<div class="tab b-40 t-10">
@@ -29,9 +29,7 @@
 					<p>{{ipsum | words: 20}}</p>
 				</div>
 				<div class="col w-60 l-260">
-					<div class="radio-button" ng-click="toggleIvr(number)" ng-class="{'active': number.ivr === true }">
-						<span class="toggle"></span>
-					</div>
+					<toggle-switch model="number" option="'ivr'"></toggle-switch>
 				</div>
 			</div>
 
@@ -42,7 +40,7 @@
 					<p>{{ipsum | words: 20}}</p>
 				</div>
 				<div class="col w-270 l-50">
-					<select ng-init="ivrMenu = number.ivr" ng-model="ivrMenu" ng-options="ivr.id as ivr.name for ivr in ivrs">
+					<select ng-init="ivrMenu = number.ivrMenu" ng-model="ivrMenu" ng-options="ivr.id as ivr.name for ivr in ivrs">
 					</select>
 				</div>
 			</div>
@@ -104,7 +102,7 @@
 					<p>{{ipsum | words: 20}}</p>
 				</div>
 				<div class="col w-60 l-260">
-					<radio-button state="{{number.recordCalls}}"></radio-button>
+					<toggle-switch model="number" option="'recordCalls'"></toggle-switch>
 				</div>
 			</div>
 
@@ -166,7 +164,7 @@
 					<p>{{ipsum | words: 20}}</p>
 				</div>
 				<div class="col w-60 l-260">
-					<radio-button state="{{number.voicemail}}"></radio-button>
+					<toggle-switch model="number" option="'voicemail'"></toggle-switch>
 				</div>
 			</div>
 
@@ -176,7 +174,7 @@
 					<p>{{ipsum | words: 20}}</p>
 				</div>
 				<div class="col w-60 l-260">
-					<radio-button state="{{number.transcribeVoicemail}}"></radio-button>
+					<toggle-switch model="number" option="'transcribeVoicemail'"></toggle-switch>
 				</div>
 			</div>
 

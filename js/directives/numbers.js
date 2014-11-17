@@ -7,7 +7,7 @@ app.directive('numbers', function(){
 			controller: function($log,$scope,$http,apiService){
 
 				$scope.activeCapsule = null;
-				$scope.activeTab = null;
+				$scope.activeTab = 1;
 				
 				apiService.get('numbers').then(function(numbers) {
 					$scope.numbers = numbers;

@@ -8,9 +8,14 @@
 @import 'voice-animation';
 @import 'side-menu';
 @import 'radio-button';
+@import 'modal';
 
 body {
 	font-family: "Proxima Nova";
+	&.modal-active {
+		overflow:hidden;
+		height: 100%;
+	}
 }
 
 hr { display: block; height: 1px;
@@ -29,6 +34,8 @@ body.debug {
 		}
 	}
 }
+
+
 
 .debug-control {
 	$light: lighten(#000,60);
@@ -148,6 +155,13 @@ p {
 	}
 }
 
+label {
+	font-size:14px;
+	color:#333;
+	margin-bottom:6px;
+	display:block;
+	text-transform:capitalize;
+}
 
 input[type="text"] {
 	$padding:8px;
@@ -171,7 +185,7 @@ select {
 	font-size:13px;
 	background:#fff;
 	font-family:"Proxima Nova";
-	height:32px;
+	height:34px;
 }
 
 .col {
