@@ -11,6 +11,10 @@ app.config(function($routeProvider,$resourceProvider) {
 		templateUrl: '/js/ivr/views/ivr-list.html',
 		controller:'ivrMenuController'
 	})
+	.when('/ivr/label',{
+		templateUrl: '/js/ivr/views/ivr-label.html',
+		controller:'ivrMenuController'
+	})
 	.when('/settings',{
 		templateUrl: '/js/settings/views/settings.html',
 		controller: 'settingsController'

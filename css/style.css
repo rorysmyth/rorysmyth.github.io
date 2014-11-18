@@ -5961,6 +5961,26 @@ ul.ivr-menu-list {
       font-weight: bold;
       border-right: 3px solid #78a300; }
 
+ul.ivr-menu-dropdown {
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  position: absolute;
+  max-width: 300px;
+  padding: 10px 0;
+  min-width: 200px; }
+  ul.ivr-menu-dropdown li {
+    padding: 0 30px;
+    line-height: 45px; }
+    ul.ivr-menu-dropdown li:last-child .inner-item {
+      border-top: 1px solid #ddd; }
+    ul.ivr-menu-dropdown li .inner-item {
+      display: block; }
+    ul.ivr-menu-dropdown li:hover {
+      background: #fafafa;
+      cursor: pointer; }
+
 body {
   font-family: "Proxima Nova"; }
   body.modal-active {
@@ -6046,6 +6066,21 @@ h3 {
 h4 {
   font-size: 13px;
   font-weight: 600; }
+  h4.label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+    h4.label:after {
+      position: absolute;
+      top: 2px;
+      right: -15px;
+      display: block;
+      width: 4px;
+      height: 4px;
+      border: 1px solid #333;
+      border-width: 0 2px 2px 0;
+      content: "";
+      -webkit-transform: rotate(45deg); }
 
 p {
   color: #555;

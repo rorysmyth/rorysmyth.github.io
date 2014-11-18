@@ -1,3 +1,9 @@
+@mixin dropdownShadow {
+	background:#fff;
+	border:1px solid #ddd;
+	-webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.1);
+}
+
 @import 'layout';
 @import 'colors';
 @import 'reset';
@@ -123,6 +129,24 @@ h3 {
 h4 {
 	font-size:13px;
 	font-weight:600;
+	&.label {
+	position: relative;
+	display:inline-block;
+	cursor:pointer;
+		&:after {
+			position:absolute;
+			top:2px;
+			right:-15px;
+			display: block;
+			$w:4px;
+			width: $w;
+			height:$w;
+			border:1px solid #333;
+			border-width:0 2px 2px 0;
+			content: "";
+			-webkit-transform:rotate(45deg)
+		}
+	}
 }
 
 p {
