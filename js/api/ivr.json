@@ -4,7 +4,7 @@
       "name":"English general menu",
       "ivr":[
          {
-            "name":"Main menu",
+            "name":"Main IVR menu",
             "greeting":"Main greeting (English)",
             "routes":[
                {

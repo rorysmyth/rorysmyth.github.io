@@ -18,12 +18,12 @@
 	}
 	&:after {
 		position: absolute;
-		top:23px;
+		top:0px;
 		right:30px;
 		display: block;
-		width: 27px;
-		height:14px;
-		background:red;
+		width: 47px;
+		height:60px;
+		cursor:pointer;
 		content:"";
 		background:url('../img/cog.png') center center no-repeat;
 	}

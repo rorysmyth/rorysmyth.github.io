@@ -1,5 +1,13 @@
 .table {
 	font-size:13px;
+	&.sheltered {
+		li {
+			&:last-child{
+				border-bottom: 1px solid #ddd;
+				margin-bottom: 0px;
+			}
+		}
+	}
 	li {
 		line-height: 40px;
 		padding: 0 20px;

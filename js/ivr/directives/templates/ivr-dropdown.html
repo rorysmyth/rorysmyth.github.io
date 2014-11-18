@@ -21,11 +21,7 @@
 			<!-- capsule tabs -->
 
 
-			<!-- 
-			--------------------------------------------
-				associated numbers
-			--------------------------------------------
-			-->
+			<!-- associated numbers -->
 			<div ng-show="activeTab === 2">
 				<div class="row t-40 b-10">
 					<h4>Numbers ({{selectedIvr.routes.length}})</h4>
@@ -46,19 +42,10 @@
 					</ul>
 				</div>
 			</div>
-
-			<!-- 
-			--------------------------------------------
-				/associated numbers
-			--------------------------------------------
-			-->
+			<!-- associated numbers -->
 
 
-			<!-- 
-			--------------------------------------------
-				settings tab
-			--------------------------------------------
-			-->
+			<!-- settings -->
 			<div class="row" ng-show="activeTab === 3">
 				
 				<div class="col w-p-100">
@@ -72,18 +59,10 @@
 				</div>
 
 			</div>
-			<!-- 
-			--------------------------------------------
-				/settings tab
-			--------------------------------------------
-			-->
+			<!-- settings -->
 
 
-			<!-- 
-			--------------------------------------------
-				ivr menu level tab
-			--------------------------------------------
-			-->
+			<!-- ivr menu level -->
 			<div class="row" ng-show="activeTab === 1">
 			
 
@@ -136,7 +115,7 @@
 
 
 					<div class="row" ng-controller="ivrRouteController">
-						<ul class="table">
+						<ul class="table sheltered">
 							<li ng-repeat="route in selectedIvr.routes">
 								<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
 								<span class="seg">
@@ -149,15 +128,26 @@
 						</ul>
 					</div>
 					<!-- /active routes -->
+	
+
+					<!-- delete -->
+					<div class="row t-40 b-10">
+						<h4 class="b-10">Delete this menu level?</h4>
+						<div class="col w-p-60">
+							<p>{{ ipsum | words : 15}}</p>
+						</div>
+						<div class="col w-p-40 p-l-30">
+							<button class="col right white secondary">delete</button>
+						</div>
+					</div>
+					<!-- delete -->
+
+
 				</div>
 				<!-- /ivr info -->
 			
 			</div>
-			<!-- 
-			--------------------------------------------
-				/ivr menu level tab
-			--------------------------------------------
-			-->
+			<!-- ivr menu level -->
 		
 			<!-- save action -->
 			<div class="save-controls">

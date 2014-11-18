@@ -5740,12 +5740,12 @@ table {
       opacity: 0.3; }
   .capsule:after {
     position: absolute;
-    top: 23px;
+    top: 0px;
     right: 30px;
     display: block;
-    width: 27px;
-    height: 14px;
-    background: red;
+    width: 47px;
+    height: 60px;
+    cursor: pointer;
     content: "";
     background: url("../img/cog.png") center center no-repeat; }
   .capsule h3 {
@@ -5773,6 +5773,9 @@ table {
 
 .table {
   font-size: 13px; }
+  .table.sheltered li:last-child {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px; }
   .table li {
     line-height: 40px;
     padding: 0 20px;
@@ -5971,6 +5974,7 @@ ul.ivr-menu-dropdown {
   padding: 10px 0;
   min-width: 200px; }
   ul.ivr-menu-dropdown li {
+    -webkit-transition: 0.3s;
     padding: 0 30px;
     line-height: 45px; }
     ul.ivr-menu-dropdown li:last-child .inner-item {
@@ -5978,7 +5982,7 @@ ul.ivr-menu-dropdown {
     ul.ivr-menu-dropdown li .inner-item {
       display: block; }
     ul.ivr-menu-dropdown li:hover {
-      background: #fafafa;
+      background: #eee;
       cursor: pointer; }
 
 body {
@@ -5986,6 +5990,14 @@ body {
   body.modal-active {
     overflow: hidden;
     height: 100%; }
+
+.delete {
+  color: #e74c3c;
+  font-size: 11px;
+  margin-left: 25px;
+  border-bottom: 1px dotted #e74c3c;
+  margin-top: 2px;
+  cursor: pointer; }
 
 hr {
   display: block;
@@ -6182,6 +6194,15 @@ button {
   outline: none;
   -webkit-transition: 0.3s;
   border: 1px solid #fff; }
+  button.tertiary {
+    padding: 7px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 14px; }
+  button.secondary {
+    padding: 7px 15px;
+    font-size: 12px;
+    font-weight: bold; }
   button.green {
     background: #78a300;
     color: #fff; }
