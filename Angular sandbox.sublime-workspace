@@ -116,42 +116,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "css/margins.scss",
 			"settings":
 			{
-				"buffer_size": 4162,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/ivr/directives/templates/ivr-label.html",
-			"settings":
-			{
-				"buffer_size": 4978,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/ivr/directives/templates/ivr-dropdown.html",
-			"settings":
-			{
-				"buffer_size": 4668,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/ivr/directives/templates/ivr-list.html",
-			"settings":
-			{
-				"buffer_size": 5375,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/ivr/directives/templates/ivr-nested-capsules.html",
-			"settings":
-			{
-				"buffer_size": 2845,
+				"buffer_size": 605,
 				"line_ending": "Unix"
 			}
 		},
@@ -160,38 +128,6 @@
 			"settings":
 			{
 				"buffer_size": 1088,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/ivr/directives/ivr-label.js",
-			"settings":
-			{
-				"buffer_size": 1384,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/style.scss",
-			"settings":
-			{
-				"buffer_size": 6184,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "css/capsule.scss",
-			"settings":
-			{
-				"buffer_size": 953,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/nav/views/nav.html",
-			"settings":
-			{
-				"buffer_size": 564,
 				"line_ending": "Unix"
 			}
 		}
@@ -257,33 +193,34 @@
 	],
 	"file_history":
 	[
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
+		"/Users/rsmyth/Sites/sandbox.dev/index.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-label.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-list.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views/nav.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-label.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/ivr.json",
 		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.css",
 		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
 		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-list.html",
 		"/Users/rsmyth/Sites/sandbox.dev/css/modal.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/colors.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/numbers.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-label.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views/nav.html",
 		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.css",
 		"/Users/rsmyth/Sites/sandbox.dev/css/colors.css",
 		"/Users/rsmyth/Sites/sandbox.dev/js/config.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.css",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/settings.json",
 		"/Users/rsmyth/Sites/sandbox.dev/js/settings/views/settings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-label.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/greetings.json",
-		"/Users/rsmyth/Sites/sandbox.dev/index.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
 		"/Users/rsmyth/Sites/sandbox.dev/config.codekit",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/offset.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/nav/controllers/nav.js",
@@ -383,8 +320,7 @@
 		"/Users/rsmyth/Downloads/underscore-min.map",
 		"/Users/rsmyth/Sites/sandbox.dev/js/underscore.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/truncate.js",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/test.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController-2.js"
+		"/Users/rsmyth/Sites/sandbox.dev/templates/test.html"
 	],
 	"find":
 	{
@@ -402,6 +338,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ivr menu",
+			"h3",
+			"setactive",
+			"<span ng-show=\"$index == 0\" class=\"fa fa-lock r-10\">",
+			"ivr menu level",
 			"add mew",
 			"add ",
 			"add new",
@@ -517,28 +458,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "css/margins.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4162,
+						"buffer_size": 605,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2197,
-								2197
+								276,
+								276
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1072.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -546,122 +487,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "js/ivr/directives/templates/ivr-label.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4978,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								121,
-								62
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/ivr/directives/templates/ivr-dropdown.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4668,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3704,
-								3704
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1466.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/ivr/directives/templates/ivr-list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5375,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								121,
-								121
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "js/ivr/directives/templates/ivr-nested-capsules.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2845,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								987,
-								991
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "css/route-table.scss",
 					"semi_transient": false,
 					"settings":
@@ -686,132 +511,14 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 6,
-					"file": "js/ivr/directives/ivr-label.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1384,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								395,
-								395
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 31.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "css/style.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4133,
-								4133
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 4094.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "css/capsule.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 953,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								470,
-								470
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "js/nav/views/nav.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 564,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								510,
-								510
-							]
-						],
-						"settings":
-						{
-							"history_list_is_closing": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -868,6 +575,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"margin",
+				"css/margins.scss"
+			],
 			[
 				"index",
 				"index.html"
@@ -947,10 +658,6 @@
 			[
 				"ivr.s",
 				"js/api/ivr.json"
-			],
-			[
-				"margin",
-				"css/margins.scss"
 			],
 			[
 				"mar",

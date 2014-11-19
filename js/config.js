@@ -27,6 +27,10 @@ app.config(function($routeProvider,$resourceProvider) {
 		templateUrl: '/js/greetings/views/greetings.html',
 		controller: 'greetingsController'
 	})
+	.when('/saving',{
+		templateUrl: '/js/saving-action/views/saving-action.html',
+		controller: 'savingActionController'
+	})
 	.when('/',{
 		templateUrl: '/js/settings/views/settings.html',
 		controller: 'settingsController'

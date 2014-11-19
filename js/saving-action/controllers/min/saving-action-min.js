@@ -1,0 +1,1 @@
+app.controller("savingActionController",function(n,o){o.ipsum=n.ipsum});
