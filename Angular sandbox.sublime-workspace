@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
-				"font",
-				"font-size"
+				"border",
+				"border-radius"
+			],
+			[
+				"margin-",
+				"margin-top"
 			],
 			[
 				"margin",
-				"margin-bottom"
+				"margin-top"
 			],
 			[
 				"pos",
 				"pos:a	position:absolute"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"webkit-trans",
+				"webkit-transition"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"padding",
@@ -40,10 +60,6 @@
 				"line-height"
 			],
 			[
-				"border",
-				"border-radius"
-			],
-			[
 				"http",
 				"verbose_$http	AngularJS"
 			],
@@ -58,10 +74,6 @@
 			[
 				"timeout",
 				"$timeout	AngularJS"
-			],
-			[
-				"font-",
-				"font-style"
 			],
 			[
 				"loadingI",
@@ -103,6 +115,86 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/templates/ivr-label.html",
+			"settings":
+			{
+				"buffer_size": 4978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/templates/ivr-dropdown.html",
+			"settings":
+			{
+				"buffer_size": 4668,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/templates/ivr-list.html",
+			"settings":
+			{
+				"buffer_size": 5375,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/templates/ivr-nested-capsules.html",
+			"settings":
+			{
+				"buffer_size": 2845,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/route-table.scss",
+			"settings":
+			{
+				"buffer_size": 1088,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/ivr-label.js",
+			"settings":
+			{
+				"buffer_size": 1384,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.scss",
+			"settings":
+			{
+				"buffer_size": 6184,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/capsule.scss",
+			"settings":
+			{
+				"buffer_size": 953,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/nav/views/nav.html",
+			"settings":
+			{
+				"buffer_size": 564,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -158,55 +250,67 @@
 	[
 		"/Users/rsmyth/Sites/sandbox.dev",
 		"/Users/rsmyth/Sites/sandbox.dev/js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/associated-numbers/controllers",
-		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives",
-		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/templates",
-		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/views",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates",
-		"/Users/rsmyth/Sites/sandbox.dev/js/nav/controllers",
-		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views",
-		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives",
-		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/templates",
-		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/views",
-		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives",
-		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/templates",
-		"/Users/rsmyth/Sites/sandbox.dev/js/saving",
-		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controllers",
-		"/Users/rsmyth/Sites/sandbox.dev/js/settings/controllers",
-		"/Users/rsmyth/Sites/sandbox.dev/js/toggle-switch/directives"
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views"
 	],
 	"file_history":
 	[
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/ivr.json",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.css",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-list.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/modal.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/colors.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/numbers.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-label.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views/nav.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.css",
+		"/Users/rsmyth/Sites/sandbox.dev/css/colors.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/config.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/settings.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings/views/settings.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-label.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/greetings.json",
+		"/Users/rsmyth/Sites/sandbox.dev/index.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/config.codekit",
+		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/offset.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/controllers/nav.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.css",
+		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/side-menu.scssc",
+		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/style.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-menu.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-list.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-list.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controllers/saving-controller.js",
+		"/Users/rsmyth/Sites/sandbox.dev/saving.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/numbers.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/templates/numbers.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/toggle-switch/directives/toggle-switch.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/settings/controllers/settings.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/greetings.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/settings/views/settings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/templates/greetings.html",
-		"/Users/rsmyth/Sites/sandbox.dev/saving.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controllers/saving-controller.js",
-		"/Users/rsmyth/Sites/sandbox.dev/index.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controller/saving-controller.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/ivr.json",
-		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.css",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/angular/bower.json",
-		"/Users/rsmyth/Sites/sandbox.dev/css/style.css",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
-		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-route.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-dropdown.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/save-controls.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/templates/save-controls.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/controllers/numbers.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsule.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/config.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/modal.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/manipulation/var/rcheckableType.js",
 		"/Users/rsmyth/Sites/sandbox.dev/css/tab.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-nested-capsules.html",
@@ -227,12 +331,10 @@
 		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/ivr-menu.js",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/save-controls.html",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/modals/edit-route.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/numbers.json",
 		"/Users/rsmyth/Sites/sandbox.dev/inc/nav.html",
 		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.css",
 		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.css",
-		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/offset.js",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/edit-route-modal.html",
 		"/Users/rsmyth/Sites/sandbox.dev/views/ivr-dropdown.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/config/init.js",
@@ -242,12 +344,8 @@
 		"/Users/rsmyth/Sites/sandbox.dev/views/ivr.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/directives/toggle-switch.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/route.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
 		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/settings.js",
 		"/Users/rsmyth/Sites/sandbox.dev/views/settings.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/greetings.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/settings.json",
 		"/Users/rsmyth/Sites/sandbox.dev/greetings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/group-routing.js",
 		"/Users/rsmyth/Sites/sandbox.dev/template.html",
@@ -268,14 +366,12 @@
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/months.json",
 		"/Users/rsmyth/Sites/sandbox.dev/js/factories/api.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/groups.json",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.css",
 		"/Users/rsmyth/Sites/sandbox.dev/js/modules/init.js",
 		"/Users/rsmyth/Library/Application Support/Sublime Text 3/Packages/User/angular log.sublime-snippet",
 		"/Users/rsmyth/Sites/sandbox.dev/js/resources/api.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/brands.json",
 		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/nav.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/factories/ipsum.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/js/numbers.json",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/greetings.json",
@@ -288,23 +384,7 @@
 		"/Users/rsmyth/Sites/sandbox.dev/js/underscore.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/truncate.js",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/test.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController-2.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/avatar-animation.scssc",
-		"/Users/rsmyth/Sites/sandbox.dev/js/min/voicemailController-min.js",
-		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/data/accepts.js",
-		"/Users/rsmyth/Sites/sandbox.dev/bower_components/angular/angular-csp.css",
-		"/Users/rsmyth/Sites/sandbox.dev/Angular sandbox.sublime-project",
-		"/Users/rsmyth/Sites/angular.dev/js/controllers.js",
-		"/Users/rsmyth/Sites/angular.dev/index.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/greetingsController.js",
-		"/Users/rsmyth/Sites/sandbox.dev/greetings2.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/voicemail.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/controllers.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/voicemailController.js",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/settings.html",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/using.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/routingExample.js",
-		"/Users/rsmyth/Sites/sandbox.dev/routing.html"
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController-2.js"
 	],
 	"find":
 	{
@@ -322,6 +402,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"add mew",
+			"add ",
+			"add new",
+			"sheltered",
+			"delete",
+			"table",
+			"name",
+			"delete",
+			"de;ete",
+			"button",
+			"delete",
+			"name",
+			"ivr menu",
+			"active",
+			"\"voicemail\"",
+			"\"group\"",
+			"\"number\"",
+			"\"group\"",
+			"selectedIVr.",
+			"ivr menu",
 			"+	",
 			"-",
 			"enable",
@@ -387,6 +487,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"\"Voicemail\"",
+			"\"Group\"",
+			"\"Number\"",
+			"\"Group\"",
+			"activeIvrMenu.",
 			"",
 			"<div class=\"col w-p-40 p-l-50\">",
 			"<div class=\"col w-40 p-l-50\">",
@@ -407,8 +512,306 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2197,
+								2197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1072.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/ivr/directives/templates/ivr-label.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								62
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/ivr/directives/templates/ivr-dropdown.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4668,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3704,
+								3704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1466.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/ivr/directives/templates/ivr-list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5375,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/ivr/directives/templates/ivr-nested-capsules.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								987,
+								991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/route-table.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1088,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "js/ivr/directives/ivr-label.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								395
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 31.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "css/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4133,
+								4133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4094.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "css/capsule.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								470,
+								470
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "js/nav/views/nav.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -429,6 +832,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -439,6 +848,7 @@
 		"rows":
 		[
 			0.0,
+			0.463040413534,
 			1.0
 		]
 	},
@@ -463,8 +873,80 @@
 				"index.html"
 			],
 			[
+				"route",
+				"css/route-table.scss"
+			],
+			[
 				"styl",
 				"css/style.scss"
+			],
+			[
+				"st",
+				"css/style.scss"
+			],
+			[
+				"buttons",
+				"css/buttons.scss"
+			],
+			[
+				"colors",
+				"css/colors.scss"
+			],
+			[
+				"ivr-menu",
+				"css/ivr-menu-list.scss"
+			],
+			[
+				"caps",
+				"css/capsule.scss"
+			],
+			[
+				"ivr",
+				"js/api/ivr.json"
+			],
+			[
+				"nav",
+				"js/nav/views/nav.html"
+			],
+			[
+				"modal",
+				"css/modal.scss"
+			],
+			[
+				"menu",
+				"css/ivr-menu-list.css"
+			],
+			[
+				"style",
+				"css/style.scss"
+			],
+			[
+				"config",
+				"js/config.js"
+			],
+			[
+				"nav.",
+				"js/nav/views/nav.html"
+			],
+			[
+				"sty",
+				"css/style.scss"
+			],
+			[
+				"greet",
+				"js/api/greetings.json"
+			],
+			[
+				"number",
+				"js/api/numbers.json"
+			],
+			[
+				"menu.sc",
+				"css/ivr-menu-list.scss"
+			],
+			[
+				"ivr.s",
+				"js/api/ivr.json"
 			],
 			[
 				"margin",
@@ -475,24 +957,12 @@
 				"css/margins.scss"
 			],
 			[
-				"sty",
-				"css/style.scss"
-			],
-			[
 				"tyl",
-				"css/style.css"
-			],
-			[
-				"style",
 				"css/style.css"
 			],
 			[
 				"margins",
 				"css/margins.scss"
-			],
-			[
-				"caps",
-				"css/capsule.scss"
 			],
 			[
 				"numbers",
@@ -507,24 +977,12 @@
 				"templates/save-controls.html"
 			],
 			[
-				"modal",
-				"css/modal.scss"
-			],
-			[
 				"dev",
 				"js/controllers/dev.js"
 			],
 			[
-				"ivr",
-				"js/api/ivr.json"
-			],
-			[
 				"moda",
 				"css/modal.scss"
-			],
-			[
-				"number",
-				"js/api/numbers.json"
 			],
 			[
 				"greeting.son",
@@ -587,16 +1045,8 @@
 				"js/numbers.json"
 			],
 			[
-				"nav",
-				"inc/nav.html"
-			],
-			[
 				"marg",
 				"css/margins.scss"
-			],
-			[
-				"route",
-				"css/route-table.scss"
 			],
 			[
 				"route-ta",

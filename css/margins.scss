@@ -16,6 +16,13 @@
 	}
 }
 
+@for $i from 0 through 300 {
+	.r-#{$i}{
+		margin-right: #{$i}px !important;
+	}
+}
+
+
 @for $i from 0 through 100 {
 	.p-l-#{$i}{
 		padding-left: #{$i}px !important;
