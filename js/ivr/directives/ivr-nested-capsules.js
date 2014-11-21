@@ -6,7 +6,7 @@ app.directive('ivrNestedCapsules', function(){
 		return {
 
 			restrict: 'E',
-			templateUrl: v2,
+			templateUrl: v1,
 
 			controller: function($log,$scope,$http,apiService,ipsumService){
 				
