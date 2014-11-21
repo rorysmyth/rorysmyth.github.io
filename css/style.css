@@ -6980,6 +6980,7 @@ table {
 .capsule.accordian {
   padding: 0px 30px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fafafa), color-stop(0%, #ffffff));
+  background: #fafafa;
   border-radius: 3px;
   margin-bottom: 0px;
   overflow: hidden;
@@ -7370,6 +7371,11 @@ label {
   margin-bottom: 6px;
   display: block;
   text-transform: capitalize; }
+
+form.inline label {
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 10px; }
 
 input[type="text"] {
   width: 100%;

@@ -1,0 +1,14 @@
+<div class="row t-40 b-10 title-action">
+	<h4>IVR Menus</h4>
+	<button class="white secondary col right">add menu</button>
+</div>
+<ul class="table">
+	<li ng-repeat="menu in ivrMenus">
+		<span class="seg">
+			{{menu.name}}
+		</span>
+		<span class="edit">
+			<span ng-click="editRouteModal(route)">edit</span><span href="#">delete</span>
+		</span>
+	</li>
+</ul>

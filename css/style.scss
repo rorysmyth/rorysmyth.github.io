@@ -205,6 +205,16 @@ label {
 	text-transform:capitalize;
 }
 
+form {
+	&.inline {
+		label {
+			font-size: 13px;
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}
+}
+
 input[type="text"] {
 	$padding:8px;
 	width:100%;
