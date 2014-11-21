@@ -6,9 +6,10 @@ app.controller('ivrRouteController', function($scope,$log,$rootScope){
 
 			if ($scope.activeRoute === route) {
 				$scope.activeRoute = null;
+				$scope.$parent.childOpen = false;
 				return;
 			};
-
+			$scope.$parent.childOpen = true;
 			$scope.activeRoute = route;
 
 		};

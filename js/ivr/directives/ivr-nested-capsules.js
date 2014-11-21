@@ -1,9 +1,13 @@
 app.directive('ivrNestedCapsules', function(){
+
+		var v1 = "/js/ivr/directives/templates/ivr-nested-capsules.html";
+		var v2 = "/js/ivr/directives/templates/ivr-nested-capsules-focus.html";
 		
 		return {
 
 			restrict: 'E',
-			templateUrl: '/js/ivr/directives/templates/ivr-nested-capsules.html',
+			templateUrl: v2,
+
 			controller: function($log,$scope,$http,apiService,ipsumService){
 				
 				$scope.ipsum = ipsumService.ipsum;
