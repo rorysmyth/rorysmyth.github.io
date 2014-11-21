@@ -31,12 +31,12 @@
 
 				<!-- menu levels -->
 				<div ng-controller="ivrRouteController">
-				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:isActive($index)}" class="capsule child">
+				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:isActive($index)}" class="capsule accordian child">
 					<h3 ng-click="setActive($index)" class="header"> <span ng-show="$index == 0" class="fa fa-lock r-10"></span> {{level.name}}<span class="sub"> ({{level.routes.length}} routes)</span></h3>
 
 					<div class="row">
-						<div class="input l-0 b-40 t-15">
-							<h4 class="b-10">{{level.name}}</h4>
+						<div class="input l-0 b-20 t-20">
+							<h4 class="b-10">Nickname</h4>
 							<input type="text" value="Nested">
 						</div>
 
@@ -56,7 +56,7 @@
 						<h4>Active routes ({{level.routes.length}})</h4>
 						<button class="white secondary col right">add route</button></a>
 					</div>
-					<ul class="table">
+					<ul class="table b-30">
 						<li ng-repeat="route in level.routes">
 							<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
 							<span class="seg">
@@ -72,8 +72,7 @@
 				<!-- /menu levels -->
 
 				<!-- save action -->
-				<div class="save-controls">
-					<hr>
+				<div class="save-controls row t-30">
 					<div class="button-group b-30">
 						<button class="cancel white">Cancel</button>
 						<button class="save l-10 black">Save</button>

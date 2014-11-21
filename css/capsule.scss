@@ -19,7 +19,7 @@
 	&:after {
 		position: absolute;
 		top:0px;
-		right:30px;
+		right:20px;
 		display: block;
 		width: 47px;
 		height:60px;
@@ -51,6 +51,67 @@
 		max-height: 999px;
 		&.child {
 			border-color:#ddd;
+		}
+	}
+}
+
+.capsule.accordian {
+
+	$h: 50px;
+	$r:0px;
+	$b: 1px solid #eee;
+	padding:0px 30px;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(100%,#fafafa), color-stop(0%,#ffffff));
+	border-radius:$r;
+	margin-bottom:0px;
+	overflow:hidden;
+	max-height:$h;
+	border:none;
+
+	margin-bottom:0px;
+	border-bottom:$b;
+	
+	&:last-child {
+	}
+
+	&:first-child {
+		border-top:$b;
+		border-width:1px 0 1px 0;
+	}
+
+	&.inactive {
+		background:rgba( #f8f8f8, .5 );
+		border:1px solid rgba(#eee, .5 );
+		h3 {
+			opacity:0.3;
+		}
+	}
+	&:after {
+		position: absolute;
+		top:0px;
+		right:10px;
+		display: block;
+		width: 47px;
+		height:$h;
+		cursor:pointer;
+		background-image:url('../img/arrow.png');
+	}
+	h3 {
+		font-size: 13px;
+		&.header {
+			line-height: $h;
+			height:$h;
+		}
+	}
+	&.open {
+		max-height: 999px;
+		background:#fff;
+		
+		&.child {
+			
+		}
+		&:after {
+			-webkit-transform:rotate(180deg)
 		}
 	}
 }

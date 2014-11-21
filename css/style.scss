@@ -142,6 +142,13 @@ h4 {
 	position: relative;
 	display:inline-block;
 	cursor:pointer;
+	font-size:14px;
+	span {
+		font-size: 13px;
+		color:#555;
+		margin-right: 5px;
+		font-weight: normal;
+	}
 		&:after {
 			position:absolute;
 			top:2px;

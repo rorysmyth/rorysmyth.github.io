@@ -31,7 +31,7 @@
 
 				<!-- menu levels -->
 				<div ng-controller="ivrRouteController">
-				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:isActive($index)}" class="capsule">
+				<div id="menulevel-{{$index}}" ng-repeat="level in menu.ivr" ng-class="{open:isActive($index)}" class="capsule accordian">
 					<h3 ng-click="setActive($index)" class="header"> <span ng-show="$index == 0" class="fa fa-lock r-10"></span> {{level.name}}<span class="sub"> ({{level.routes.length}} routes)</span></h3>
 
 					<div class="row">

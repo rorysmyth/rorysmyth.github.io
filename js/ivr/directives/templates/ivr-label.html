@@ -67,7 +67,7 @@
 			
 				<!-- ivr dropdown select -->
 				<div class="row">
-					<h4 ng-click="toggleDropdown()" class="b-10 label">{{activeIvrMenu.name}}</h4>
+					<h4 ng-click="toggleDropdown()" class="b-10 label"><span>menu:</span>{{activeIvrMenu.name}}</h4>
 					<ul class="ivr-menu-dropdown" ng-show="dropDown">
 						<li ng-click="setIvrMenu(menu); toggleDropdown()" ng-class="{'active': isActiveIvrMenu(menu) }" ng-repeat="menu in menu.ivr">
 							<span class="inner-item">{{menu.name}}</span>

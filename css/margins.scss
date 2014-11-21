@@ -25,15 +25,10 @@
 
 @for $i from 0 through 100 {
 	.p-l-#{$i}{
-		padding-left: #{$i}px !important;
-		
-		// .audio {
-		// 	&:after {
-		// 		$p: $i+5;
-		// 		left: #{$p}px;
-		// 	}
-		// }
-		
+		padding-left: #{$i}px !important;		
+	}
+	.p-b-#{$i}{
+		padding-bottom: #{$i}px !important;		
 	}
 }
 

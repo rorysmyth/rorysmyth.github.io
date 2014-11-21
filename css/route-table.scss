@@ -1,5 +1,10 @@
 .table {
 	font-size:13px;
+	&.light {
+		li {
+			border-bottom:1px dotted #ddd;
+		}
+	}
 	&.sheltered {
 		li {
 			&:last-child{
@@ -12,7 +17,7 @@
 		line-height: 40px;
 		padding: 0 20px;
 		&:first-child{
-			border-top: 1px solid #ddd;
+			border-top: 2px solid #ddd;
 		}
 		&:last-child{
 			border-bottom: none;
@@ -68,4 +73,5 @@
 			}
 		}
 	}
+
 }

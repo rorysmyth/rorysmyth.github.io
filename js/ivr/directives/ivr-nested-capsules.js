@@ -16,7 +16,7 @@ app.directive('ivrNestedCapsules', function(){
 					$scope.ivrMenus = ivr;
 				});
 
-				$scope.activeCapsule = null;
+				$scope.activeCapsule = 0;
 
 				$scope.setActive =  function(capsule){
 
