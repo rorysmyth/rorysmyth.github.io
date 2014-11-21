@@ -57,12 +57,12 @@
 
 .capsule.accordian {
 
-	$h: 50px;
+	$h: 45px;
 	$r:3px;
 	$b: 1px solid #eee;
 	padding:0px 30px;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(100%,#fafafa), color-stop(0%,#ffffff));
 	background:#fafafa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(100%,#fafafa), color-stop(60%,#ffffff));
 	border-radius:$r;
 	margin-bottom:0px;
 	overflow:hidden;
