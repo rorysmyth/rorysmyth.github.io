@@ -6,7 +6,7 @@
 	margin-bottom:10px;
 	overflow:hidden;
 	max-height:60px;
-	-webkit-transition:max-height 0.1s;
+	-webkit-transition:max-height 0.2s;
 	position:relative;
 	border:1px solid #eee;
 	&.inactive {
@@ -46,7 +46,7 @@
 		}
 	}
 	&.open {
-		-webkit-transition:max-height 0.4s;
+		-webkit-transition:max-height 0.6s;
 		border:1px solid $green;
 		background:#fff;
 		max-height: 999px;
