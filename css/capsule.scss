@@ -58,7 +58,7 @@
 .capsule.accordian {
 
 	$h: 50px;
-	$r:0px;
+	$r:3px;
 	$b: 1px solid #eee;
 	padding:0px 30px;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(100%,#fafafa), color-stop(0%,#ffffff));
@@ -68,15 +68,16 @@
 	max-height:$h;
 	border:none;
 
-	margin-bottom:0px;
-	border-bottom:$b;
+	margin-bottom:-1px;
+	border:$b;
 	
 	&:last-child {
 	}
 
 	&:first-child {
-		border-top:$b;
-		border-width:1px 0 1px 0;
+		border-radius:$r $r 0 0;
+		// border-top:$b;
+		// border-width:1px 0 1px 0;
 	}
 
 	&.inactive {

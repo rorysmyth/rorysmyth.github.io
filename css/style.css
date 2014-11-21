@@ -6980,16 +6980,15 @@ table {
 .capsule.accordian {
   padding: 0px 30px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #fafafa), color-stop(0%, #ffffff));
-  border-radius: 0px;
+  border-radius: 3px;
   margin-bottom: 0px;
   overflow: hidden;
   max-height: 50px;
   border: none;
-  margin-bottom: 0px;
-  border-bottom: 1px solid #eee; }
+  margin-bottom: -1px;
+  border: 1px solid #eee; }
   .capsule.accordian:first-child {
-    border-top: 1px solid #eee;
-    border-width: 1px 0 1px 0; }
+    border-radius: 3px 3px 0 0; }
   .capsule.accordian.inactive {
     background: rgba(248, 248, 248, 0.5);
     border: 1px solid rgba(238, 238, 238, 0.5); }
