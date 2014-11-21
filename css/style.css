@@ -6936,7 +6936,7 @@ table {
   margin-bottom: 10px;
   overflow: hidden;
   max-height: 60px;
-  -webkit-transition: max-height 0.4s;
+  -webkit-transition: max-height 0.1s;
   position: relative;
   border: 1px solid #eee; }
   .capsule.inactive {
@@ -6971,6 +6971,7 @@ table {
         padding-left: 25px;
         background: url("../img/ie.png") center left no-repeat; }
   .capsule.open {
+    -webkit-transition: max-height 0.4s;
     border: 1px solid #78a300;
     background: #fff;
     max-height: 999px; }
