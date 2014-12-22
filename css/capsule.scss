@@ -98,6 +98,7 @@
 		height:$h;
 		cursor:pointer;
 		background-image:url('../img/arrow.png');
+		background-image:url('../img/cog.png');
 	}
 	h3 {
 		font-size: 13px;
@@ -114,7 +115,7 @@
 			
 		}
 		&:after {
-			-webkit-transform:rotate(180deg)
+			// -webkit-transform:rotate(180deg)
 		}
 	}
 }

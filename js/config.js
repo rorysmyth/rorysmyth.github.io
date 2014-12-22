@@ -1,19 +1,8 @@
 app.config(function($routeProvider,$resourceProvider) {
 	$routeProvider
 	.when('/ivr',{
-		templateUrl: '/js/ivr/views/ivr-nested-capsules.html',
-	})
-	.when('/ivr/dropdown',{
-		templateUrl: '/js/ivr/views/ivr-dropdown.html',
-		controller:'ivrMenuController'
-	})
-	.when('/ivr/list',{
-		templateUrl: '/js/ivr/views/ivr-list.html',
-		controller:'ivrMenuController'
-	})
-	.when('/ivr/label',{
-		templateUrl: '/js/ivr/views/ivr-label.html',
-		controller:'ivrMenuController'
+		templateUrl: '/js/ivr/views/ivr.html',
+		// controller:'ivrController'
 	})
 	.when('/settings',{
 		templateUrl: '/js/settings/views/settings.html',

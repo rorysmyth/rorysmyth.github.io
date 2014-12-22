@@ -1,21 +1,23 @@
-app.directive('ivrDropdown', function(){
+app.directive('ivrMenus', function(){
 
 		return {
 
 			restrict: 'E',
-			templateUrl: '/js/ivr/directives/templates/ivr-dropdown.html',
+			templateUrl: '/js/ivr/directives/templates/ivr.html',
 			controller: function($log,$scope,$rootScope,$http,ipsumService,apiService){
-				
+
 				apiService.get('ivr').then(function(ivr) {
 					$scope.ivrMenus = ivr;
 				});
 
 				$scope.ipsum = ipsumService.ipsum;
 				$scope.activeCapsule = null;
-				$scope.activeTab = 1;
+				$scope.activeTab = null;
 				$scope.editingRoute = false;
 
 				$scope.setActive =  function(capsule){
+
+					$scope.activeIvrMenu = $scope.ivrMenus[capsule].ivr[0]
 
 					if ($scope.activeCapsule === capsule) {
 						$scope.activeCapsule = null;
@@ -34,6 +36,15 @@ app.directive('ivrDropdown', function(){
 
 				$scope.isActiveTab = function(tab){
 					return $scope.activeTab === tab;
+				}
+
+
+				$scope.setIvrMenu = function(ivr){
+					$scope.activeIvrMenu = ivr;
+				}
+
+				$scope.isActiveIvrMenu = function(ivr){
+					return $scope.activeIvrMenu === ivr;
 				}
 
 			}

@@ -4,15 +4,19 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ipsu",
+				"ipsumService"
+			],
+			[
 				"border",
 				"border-radius"
 			],
 			[
 				"margin-",
-				"margin-top"
-			],
-			[
-				"margin",
 				"margin-top"
 			],
 			[
@@ -116,18 +120,69 @@
 	"buffers":
 	[
 		{
-			"file": "css/margins.scss",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 605,
+				"buffer_size": 5916,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/route-table.scss",
+			"contents": "<!-- edit route -->\n<div class=\"modal\" ng-show=\"modal.editing === true\">\n	<div class=\"inner\">\n		<div class=\"form\">\n\n			<div class=\"row b-20\">\n				<h3>Add Route <span class=\"close\">x</span> </h3>\n			</div>\n\n			<div class=\"row\">\n				<label for=\"keypress\">keypress</label>\n				<select>\n					<option value=\"1\">{{modal.route.keypress}}</option>\n				</select>\n			</div>\n\n			<div class=\"row t-30\">\n				<label for=\"action\">action</label>\n				<select>\n					<option value=\"1\">Route to {{modal.route.action}}</option>\n				</select>\n			</div>\n\n			<div class=\"row t-30\">\n				<label for=\"action\">{{modal.route.action}}</label>\n				<select>\n					<option value=\"1\">{{modal.route.value}}</option>\n				</select>\n			</div>\n\n			<!-- save controls -->\n			<div class=\"row save-controls\">\n				<hr>\n				<div class=\"button-group\">\n					<button class=\"cancel white\" ng-click=\"modal.editing = false\">Cancel</button>\n					<button class=\"save l-10 black\" ng-click=\"modal.route = {}\">Save</button>\n				</div>\n			</div>\n			<!-- save controls -->\n\n		</div>\n	</div>\n</div>\n<!-- edit route -->",
+			"file": "js/ivr/views/modals/edit-route.html",
+			"file_size": 1096,
+			"file_write_time": 130606868160000000,
 			"settings":
 			{
-				"buffer_size": 1088,
+				"buffer_size": 1059,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/settings/views/settings.html",
+			"settings":
+			{
+				"buffer_size": 2383,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/config.js",
+			"settings":
+			{
+				"buffer_size": 727,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/ivr.js",
+			"settings":
+			{
+				"buffer_size": 1114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/controllers/ivr.js",
+			"settings":
+			{
+				"buffer_size": 294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/views/ivr.html",
+			"settings":
+			{
+				"buffer_size": 70,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/ivr/directives/templates/ivr.html",
+			"settings":
+			{
+				"buffer_size": 5383,
 				"line_ending": "Unix"
 			}
 		}
@@ -135,9 +190,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 287.0,
+		"height": 267.0,
 		"selected_items":
 		[
+			[
+				"close",
+				"Project: Close"
+			],
 			[
 				"json",
 				"Set Syntax: JSON"
@@ -163,7 +222,7 @@
 				"Set Syntax: Sass"
 			]
 		],
-		"width": 400.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -187,62 +246,89 @@
 		"/Users/rsmyth/Sites/sandbox.dev",
 		"/Users/rsmyth/Sites/sandbox.dev/js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views"
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/modals",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings/views"
 	],
 	"file_history":
 	[
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
-		"/Users/rsmyth/Sites/sandbox.dev/index.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-label.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-list.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views/nav.html",
-		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-label.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
+		"/Users/rsmyth/InVision/Zendesk/sketch test/Assets/Source Files/sketch file.sketch",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/ivr.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-menu.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.css",
+		"/Users/rsmyth/Sites/sandbox.dev/css/modal.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/settings/controllers/settings.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/settings.json",
+		"/Users/rsmyth/Sites/sandbox.dev/css/style.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/index.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/modals/edit-route.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/config.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/controllers/nav.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/admin-sidebar.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-list.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/vendor/underscore/underscore-min.map",
+		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/attributes/val.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-nested-capsules.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-nested-capsules.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules-smaller.html",
+		"/Users/rsmyth/Sites/sandbox.dev/Angular sandbox.sublime-project",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-label.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/api/numbers.json",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-route.js",
 		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.css",
-		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
+		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/route-table.scssc",
 		"/Users/rsmyth/Sites/sandbox.dev/css/route-table.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/modal.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/js/nav/views/nav.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-list.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules-focus.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsules.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-table.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving-action/directives/templates/saving-action.html",
+		"/Users/rsmyth/Sites/sandbox.dev/css/style.css",
+		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/save-controls.scssc",
+		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.scss",
+		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.css",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving-action/controllers/saving-action.js",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving-action/directives/saving-action.js",
+		"/Users/rsmyth/Sites/sandbox.dev/config.codekit",
+		"/Users/rsmyth/Sites/sandbox.dev/js/saving-action/views/saving-action.html",
 		"/Users/rsmyth/Sites/sandbox.dev/css/colors.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/numbers.json",
+		"/Users/rsmyth/Dropbox (Zendesk, IT)/Voice/IVR/html prototypes/capsules/saving.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-dropdown.html",
+		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-label.js",
+		"/Users/rsmyth/Sites/sandbox.dev/css/route-table",
 		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.scss",
 		"/Users/rsmyth/Sites/sandbox.dev/css/buttons.css",
 		"/Users/rsmyth/Sites/sandbox.dev/css/colors.css",
-		"/Users/rsmyth/Sites/sandbox.dev/js/config.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/margins.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/ivr-menu-list.css",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/settings.json",
 		"/Users/rsmyth/Sites/sandbox.dev/js/settings/views/settings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-label.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/greetings.json",
-		"/Users/rsmyth/Sites/sandbox.dev/config.codekit",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/offset.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/nav/controllers/nav.js",
-		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.css",
 		"/Users/rsmyth/Sites/sandbox.dev/css/.sass-cache/2fde95ef84a4a1fc118d26380dd6364dd9c29474/side-menu.scssc",
-		"/Users/rsmyth/Sites/sandbox.dev/css/side-menu.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/style.css",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-menu.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-list.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-list.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controllers/saving-controller.js",
 		"/Users/rsmyth/Sites/sandbox.dev/saving.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/numbers.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/numbers/directives/templates/numbers.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/toggle-switch/directives/toggle-switch.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/settings/controllers/settings.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/greetings.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/greetings/directives/templates/greetings.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/saving/controller/saving-controller.js",
 		"/Users/rsmyth/Sites/sandbox.dev/css/radio-button.css",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/angular/bower.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/controllers/ivr-route.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-dropdown.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/save-controls.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/directives/templates/save-controls.html",
@@ -250,8 +336,6 @@
 		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/templates/ivr-nested-capsule.html",
 		"/Users/rsmyth/Sites/sandbox.dev/bower_components/jquery/src/manipulation/var/rcheckableType.js",
 		"/Users/rsmyth/Sites/sandbox.dev/css/tab.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/views/ivr-nested-capsules.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr/directives/ivr-nested-capsules.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/form-controls/save-controls.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/associated-numbers/controllers/associated-numbers.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/save-controls/templates/save-controls.html",
@@ -270,8 +354,6 @@
 		"/Users/rsmyth/Sites/sandbox.dev/templates/modals/edit-route.html",
 		"/Users/rsmyth/Sites/sandbox.dev/inc/nav.html",
 		"/Users/rsmyth/Sites/sandbox.dev/css/capsule.css",
-		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.scss",
-		"/Users/rsmyth/Sites/sandbox.dev/css/save-controls.css",
 		"/Users/rsmyth/Sites/sandbox.dev/templates/edit-route-modal.html",
 		"/Users/rsmyth/Sites/sandbox.dev/views/ivr-dropdown.html",
 		"/Users/rsmyth/Sites/sandbox.dev/js/config/init.js",
@@ -301,26 +383,7 @@
 		"/Users/rsmyth/Sites/sandbox.dev/js/directives/min/dropdown-min.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/directives/ivr-menus.js",
 		"/Users/rsmyth/Sites/sandbox.dev/js/api/months.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/factories/api.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/api/groups.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/modules/init.js",
-		"/Users/rsmyth/Library/Application Support/Sublime Text 3/Packages/User/angular log.sublime-snippet",
-		"/Users/rsmyth/Sites/sandbox.dev/js/resources/api.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/brands.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/controllers/nav.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/factories/ipsum.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/numbers.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivrMenuController.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/greetings.json",
-		"/Users/rsmyth/Sites/sandbox.dev/js/ivr.json",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/dropdown.html",
-		"/Users/rsmyth/Sites/sandbox.dev/_index.html",
-		"/Users/rsmyth/Sites/sandbox.dev/js/underscore-min.map",
-		"/Users/rsmyth/Downloads/underscore-min (1).map",
-		"/Users/rsmyth/Downloads/underscore-min.map",
-		"/Users/rsmyth/Sites/sandbox.dev/js/underscore.js",
-		"/Users/rsmyth/Sites/sandbox.dev/js/truncate.js",
-		"/Users/rsmyth/Sites/sandbox.dev/templates/test.html"
+		"/Users/rsmyth/Sites/sandbox.dev/js/factories/api.js"
 	],
 	"find":
 	{
@@ -338,6 +401,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"controller",
+			"ivr-",
+			"settings",
+			"ivr menu levels",
+			"ivr menu",
+			"arrow",
+			"cog",
+			"   \n",
+			"associated",
+			"h3",
+			"tab",
+			"assoc",
+			"associate",
+			"tabs",
+			"transition",
+			"label",
+			"capsule",
+			".name",
+			"cog",
+			"<h3",
+			"child",
+			"green",
+			"white",
+			"$scope.capsule",
 			"ivr menu",
 			"h3",
 			"setactive",
@@ -458,28 +545,30 @@
 			[
 				{
 					"buffer": 0,
-					"file": "css/margins.scss",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 605,
+						"buffer_size": 5916,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								3740,
+								3740
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tabs_extra_last_activated": 1418660083.26,
+							"tabs_extra_last_activated_sheet_index": 0,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -487,24 +576,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "css/route-table.scss",
+					"file": "js/ivr/views/modals/edit-route.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1088,
+						"buffer_size": 1059,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								128,
-								128
+								1059,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -513,18 +602,185 @@
 					},
 					"stack_index": 1,
 					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/settings/views/settings.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								752,
+								773
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/ivr/directives/ivr.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/ivr/controllers/ivr.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/ivr/views/ivr.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 70,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/ivr/directives/templates/ivr.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4116,
+								4116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1428.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -539,12 +795,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -555,7 +805,6 @@
 		"rows":
 		[
 			0.0,
-			0.463040413534,
 			1.0
 		]
 	},
@@ -576,20 +825,88 @@
 		"selected_items":
 		[
 			[
-				"margin",
-				"css/margins.scss"
-			],
-			[
 				"index",
 				"index.html"
+			],
+			[
+				"ivr.html",
+				"js/ivr/views/ivr.html"
+			],
+			[
+				"sett",
+				"js/settings/views/settings.html"
+			],
+			[
+				"modal",
+				"css/modal.scss"
+			],
+			[
+				"conf",
+				"js/config.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"admin",
+				"css/admin-sidebar.scss"
+			],
+			[
+				"ivr",
+				"js/api/ivr.json"
+			],
+			[
+				"indx",
+				"index.html"
+			],
+			[
+				"admin-",
+				"css/admin-sidebar.scss"
+			],
+			[
+				"styl",
+				"css/style.scss"
+			],
+			[
+				"style",
+				"css/style.scss"
+			],
+			[
+				"confi",
+				"js/config.js"
+			],
+			[
+				"cap",
+				"css/capsule.scss"
+			],
+			[
+				"numbers",
+				"js/api/numbers.json"
+			],
+			[
+				"caps",
+				"css/capsule.scss"
+			],
+			[
+				"capsu",
+				"css/capsule.scss"
+			],
+			[
+				"margin",
+				"css/margins.scss"
 			],
 			[
 				"route",
 				"css/route-table.scss"
 			],
 			[
-				"styl",
+				"sy",
 				"css/style.scss"
+			],
+			[
+				"congi",
+				"js/config.js"
 			],
 			[
 				"st",
@@ -608,28 +925,12 @@
 				"css/ivr-menu-list.scss"
 			],
 			[
-				"caps",
-				"css/capsule.scss"
-			],
-			[
-				"ivr",
-				"js/api/ivr.json"
-			],
-			[
 				"nav",
 				"js/nav/views/nav.html"
 			],
 			[
-				"modal",
-				"css/modal.scss"
-			],
-			[
 				"menu",
 				"css/ivr-menu-list.css"
-			],
-			[
-				"style",
-				"css/style.scss"
 			],
 			[
 				"config",
@@ -670,14 +971,6 @@
 			[
 				"margins",
 				"css/margins.scss"
-			],
-			[
-				"numbers",
-				"js/api/numbers.json"
-			],
-			[
-				"capsu",
-				"css/capsule.scss"
 			],
 			[
 				"save",
@@ -782,10 +1075,6 @@
 			[
 				"tab",
 				"css/tab.scss"
-			],
-			[
-				"cap",
-				"css/capsule.scss"
 			]
 		],
 		"width": 0.0
@@ -797,7 +1086,7 @@
 		[
 			[
 				"",
-				"~/Desktop/zenforce.sublime-project"
+				"~/Desktop/voice makeover.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -818,7 +1107,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 244.0,
+	"side_bar_width": 402.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

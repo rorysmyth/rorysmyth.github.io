@@ -1,1 +1,0 @@
-app.controller("ivrMenuController",function(n,o,t,i,r,e){t.$route=i,t.$location=e,t.$routeParams=r,t.ipsum=n.ipsum,t.changeVersion=function(n){e.path(n)},t.isActive=function(n){return t.$location.path()===n}});

@@ -2682,3 +2682,5 @@
 127.0.0.1 - - [13/Nov/2014:10:52:08 +0000] "GET /js/ivrMenuController.js HTTP/1.1" 200 3134 "http://sandbox.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
 127.0.0.1 - - [13/Nov/2014:10:52:08 +0000] "GET /bower_components/jquery/dist/jquery.min.js HTTP/1.1" 304 - "http://sandbox.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
 127.0.0.1 - - [13/Nov/2014:10:52:08 +0000] "GET /templates/ivr-menu.html HTTP/1.1" 304 - "http://sandbox.dev/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36"
+127.0.0.1 - - [06/Dec/2014:19:12:10 +0000] "GET / HTTP/1.1" 403 202 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) QuickLook/5.0"
+127.0.0.1 - - [11/Dec/2014:14:07:38 +0000] "GET / HTTP/1.1" 403 202 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) QuickLook/5.0"

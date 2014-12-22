@@ -1,1 +1,0 @@
-app.controller("ivrRouteController",function(t,e,o){t.activeRoute=null,t.setActive=function(e){return t.activeRoute===e?(t.activeRoute=null,void(t.$parent.childOpen=!1)):(t.$parent.childOpen=!0,void(t.activeRoute=e))},t.isActive=function(e){return t.activeRoute===e},t.editRouteModal=function(t){o.modal={},o.modal.editing=!0,o.modal.route=t}});
