@@ -13,22 +13,18 @@
 			<!-- capsule tabs -->
 			<div class="tab b-40 t-10">
 				<ul>
-					<li ng-class="{ 'active':isActiveTab(1) }" ng-click="setTab(1)">Settings</li>
-					<li ng-class="{ 'active':isActiveTab(2) }" ng-click="setTab(2)">IVR Menu levels ({{menu.ivr.length}})</li>
-					<li ng-class="{ 'active':isActiveTab(3) }" ng-click="setTab(3)">Associated numbers (2)</li>
+					<li ng-class="{ 'active':isActiveTab(1) }" ng-click="setTab(1)">IVR Menu levels ({{menu.ivr.length}})</li>
+					<li ng-class="{ 'active':isActiveTab(2) }" ng-click="setTab(2)">Associated numbers (2)</li>
+					<li ng-class="{ 'active':isActiveTab(3) }" ng-click="setTab(3)">Settings</li>
 				</ul>
 			</div>
 			<!-- capsule tabs -->
 
 
-			<!-- 
-			--------------------------------------------
-				associated numbers
-			--------------------------------------------
-			-->
-			<div ng-show="activeTab === 3">
+			<!-- associated numbers -->
+			<div ng-show="activeTab === 2">
 				<div class="row t-40 b-10">
-					<h4>Numbers ({{activeIvrMenu.routes.length}})</h4>
+					<h4>Numbers ({{selectedIvr.routes.length}})</h4>
 				</div>
 				
 				<div class="row" ng-controller="associatedNumbersController">
@@ -46,20 +42,11 @@
 					</ul>
 				</div>
 			</div>
-
-			<!-- 
-			--------------------------------------------
-				/associated numbers
-			--------------------------------------------
-			-->
+			<!-- associated numbers -->
 
 
-			<!-- 
-			--------------------------------------------
-				settings tab
-			--------------------------------------------
-			-->
-			<div class="row" ng-show="activeTab === 1">
+			<!-- settings -->
+			<div class="row" ng-show="activeTab === 3">
 				
 				<div class="col w-p-100">
 					<h4 class="b-10">Name</h4>
@@ -72,27 +59,18 @@
 				</div>
 
 			</div>
-			<!-- 
-			--------------------------------------------
-				/settings tab
-			--------------------------------------------
-			-->
+			<!-- settings -->
 
 
-			<!-- 
-			--------------------------------------------
-				ivr menu level tab
-			--------------------------------------------
-			-->
-
-			<div class="row" ng-show="activeTab === 2">
+			<!-- ivr menu level -->
+			<div class="row" ng-show="activeTab === 1">
 			
+
 				<!-- ivr dropdown select -->
 				<div class="col w-p-20">
-					<h4 class="b-10">IVR Menu levels</h4>
-					<ul class="ivr-menu-list">
-						<li ng-click="setIvrMenu(menu)" ng-class="{'active': isActiveIvrMenu(menu) }" ng-repeat="menu in menu.ivr">{{menu.name}}</li>
-					</ul>
+					<h4 class="b-10">IVR Menu</h4>
+					<select ng-init="selectedIvr = menu.ivr[0]" ng-model="selectedIvr" ng-options="ivr.name for ivr in menu.ivr">
+					</select>
 				</div>
 				<!-- /ivr dropdown select -->
 		
@@ -106,7 +84,7 @@
 							<p>{{ ipsum | words : 15}}</p>
 						</div>
 						<div class="col w-p-40 p-l-30">
-							<input type="text" value="{{activeIvrMenu.name}}">
+							<input type="text" value="{{selectedIvr.name}}">
 						</div>
 					</div>
 					<!-- /name -->
@@ -121,7 +99,7 @@
 						
 							<div class="audio">
 								<select name="" id="">
-									<option ng-bind="activeIvrMenu.greeting" value=""></option>
+									<option ng-bind="selectedIvr.greeting" value=""></option>
 								</select>
 							</div>
 							
@@ -131,14 +109,14 @@
 
 					<!-- active routes -->
 					<div class="row t-40 b-10 title-action">
-						<h4>Active Routes ({{activeIvrMenu.routes.length}})</h4>
+						<h4>Active Routes ({{selectedIvr.routes.length}})</h4>
 						<button class="white secondary col right">add route</button>
 					</div>
 
 
 					<div class="row" ng-controller="ivrRouteController">
 						<ul class="table sheltered">
-							<li ng-repeat="route in activeIvrMenu.routes">
+							<li ng-repeat="route in selectedIvr.routes">
 								<span class="seg">presses <span class="action">{{route.keypress}}</span></span>
 								<span class="seg">
 									route to <span class="action">{{route.action}}</span> <span class="ul">{{route.value}}</span>
@@ -150,8 +128,8 @@
 						</ul>
 					</div>
 					<!-- /active routes -->
+	
 
-					
 					<!-- delete -->
 					<div class="row t-40 b-10">
 						<h4 class="b-10">Delete this menu level?</h4>
@@ -163,17 +141,13 @@
 						</div>
 					</div>
 					<!-- delete -->
-					
+
 
 				</div>
 				<!-- /ivr info -->
 			
 			</div>
-			<!-- 
-			--------------------------------------------
-				/ivr menu level tab
-			--------------------------------------------
-			-->
+			<!-- ivr menu level -->
 		
 			<!-- save action -->
 			<div class="save-controls">

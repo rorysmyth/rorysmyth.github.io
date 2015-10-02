@@ -28,8 +28,10 @@
 	<!-- ivr -->
 	<script type="text/javascript" src="js/ivr/controllers/ivr-menu.js"></script>
 	<script type="text/javascript" src="js/ivr/controllers/ivr-route.js"></script>
-	<script type="text/javascript" src="js/ivr/controllers/ivr.js"></script>
-	<script type="text/javascript" src="js/ivr/directives/ivr.js"></script>
+	<script type="text/javascript" src="js/ivr/directives/ivr-dropdown.js"></script>
+	<script type="text/javascript" src="js/ivr/directives/ivr-list.js"></script>
+	<script type="text/javascript" src="js/ivr/directives/ivr-label.js"></script>
+	<script type="text/javascript" src="js/ivr/directives/ivr-nested-capsules.js"></script>
 
 	<!-- nav -->
 	<script type="text/javascript" src="js/nav/controllers/nav.js"></script>
@@ -56,7 +58,7 @@
 
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body ng-controller="ivrController as ivrCtrl" ng-class="{'debug': debug === true, 'modal-active': modal.editing === true}">
+<body ng-class="{'debug': debug === true, 'modal-active': modal.editing === true}">
 
 <div id="work">
 
@@ -78,45 +80,17 @@
 	<ng-include src="'inc/debug.html'"></ng-include>
 	<div class="sub">
 
-		<div class="admin-sidebar">
-			<h3>admin home</h3>
+		<!-- side menu -->
+		<div ng-show="isActive('/ivr') || isActive('/ivr/dropdown') || isActive('/ivr/list') || isActive('/ivr/label')" class="side-menu t-60" ng-controller="ivrMenuController">
+			<h3 class="b-10">Choose IVR variation</h3>
 			<ul>
-				<li>Overview</li>
+				<li ng-class="{active:isActive('/ivr')}" ng-click="changeVersion('/ivr')">Nested capsules</li>
+				<li ng-class="{active:isActive('/ivr/dropdown')}" ng-click="changeVersion('/ivr/dropdown')">Dropdown capsules</li>
+				<li ng-class="{active:isActive('/ivr/list')}" ng-click="changeVersion('/ivr/list')">Menu List</li>
+				<li ng-class="{active:isActive('/ivr/label')}" ng-click="changeVersion('/ivr/label')">Menu Label</li>
 			</ul>
-
-			<h3>Apps</h3>
-			<ul>
-				<li>Marketplace</li>
-				<li>Manage</li>
-			</ul>
-
-			<h3>Manage</h3>
-			<ul>
-				<li>People</li>
-				<li>User fields</li>
-				<li>Organization fields</li>
-				<li>Views</li>
-				<li>Macros</li>
-				<li>Reports</li>
-				<li>Tags</li>
-				<li>Ticket Fields</li>
-				<li>Ticket Forms</li>
-				<li>Dynamic Content</li>
-				<li>Sandbox</li>
-			</ul>
-
-			<h3>Channels</h3>
-			<ul>
-				<li>Email</li>
-				<li>Twitter</li>
-				<li>Chat</li>
-				<li>Facebook</li>
-				<li class="active">Voice</li>
-				<li>Feedback tab</li>
-				<li>API</li>
-			</ul>
-
 		</div>
+		<!-- /side menu -->
 
 	</div>
 </div>
@@ -124,86 +98,9 @@
 <div id="header">
 </div>
 
-<!-- edit route -->
-<div class="modal" ng-hide="true">
-	<div class="inner">
-		<div class="form">
-
-			<div class="row b-20">
-				<h3>Add Route <span class="close">x</span> </h3>
-			</div>
-
-			<div class="row">
-				<label for="keypress">keypress</label>
-				<select>
-					<option value="1">1</option>
-				</select>
-			</div>
-
-			<div class="row t-30">
-				<label for="action">action</label>
-				<select>
-					<option value="1">Route to Group</option>
-					<option value="1">Route to Voicemail</option>
-					<option value="1">Route to IVR Menu</option>
-				</select>
-			</div>
-
-			<div class="row t-30">
-				<label for="action">Action</label>
-				<select>
-					<option value="1">{{modal.route.value}}</option>
-				</select>
-			</div>
-
-			<!-- save controls -->
-			<div class="row save-controls">
-				<hr>
-				<div class="button-group">
-					<button class="cancel white" ng-click="modal.editing = false">Cancel</button>
-					<button class="save l-10 black" ng-click="modal.route = {}">Save</button>
-				</div>
-			</div>
-			<!-- save controls -->
-
-		</div>
-	</div>
+<div>
+	<ng-include src="'js/ivr/views/modals/edit-route.html'"></ng-include> 
 </div>
-<!-- edit route -->
-
-<!-- add menu -->
-<div ng-hide="true" class="modal">
-	<div class="inner">
-		<div class="form">
-
-			<div class="row b-20">
-				<h4>Add IVR menu <span class="close">x</span> </h4>
-			</div>
-
-			<div class="row">
-				<h3 class="b-10">test</h3>
-				<div class="col w-p-60">
-					<p>{{ipsum | words: 10}}</p>
-				</div>
-				<div class="col w-p-40">
-					<input type="text">
-				</div>
-			</div>
-
-			<!-- save controls -->
-			<div class="row save-controls">
-				<hr>
-				<div class="button-group">
-					<button class="cancel white" ng-click="modal.editing = false">Cancel</button>
-					<button class="save l-10 black" ng-click="modal.route = {}">Save</button>
-				</div>
-			</div>
-			<!-- save controls -->
-
-		</div>
-	</div>
-</div>
-<!-- add menu -->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 </body>

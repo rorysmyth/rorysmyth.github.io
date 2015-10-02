@@ -7004,8 +7004,7 @@ table {
     width: 47px;
     height: 45px;
     cursor: pointer;
-    background-image: url("../img/arrow.png");
-    background-image: url("../img/cog.png"); }
+    background-image: url("../img/arrow.png"); }
   .capsule.accordian h3 {
     font-size: 13px; }
     .capsule.accordian h3.header {
@@ -7014,6 +7013,8 @@ table {
   .capsule.accordian.open {
     max-height: 999px;
     background: #fff; }
+    .capsule.accordian.open:after {
+      -webkit-transform: rotate(180deg); }
 
 .table {
   font-size: 13px; }
@@ -7184,13 +7185,13 @@ table {
       border: 1px solid #ddd;
       padding: 30px;
       border-radius: 5px; }
-      .modal .inner .form h4 {
+      .modal .inner .form h3 {
         font-size: 16px;
         border-bottom: 1px solid #ddd;
         padding-bottom: 20px;
         position: relative;
         width: 100%; }
-        .modal .inner .form h4 .close {
+        .modal .inner .form h3 .close {
           position: absolute;
           top: 0;
           right: 0;
@@ -7230,31 +7231,6 @@ ul.ivr-menu-dropdown {
     ul.ivr-menu-dropdown li:hover {
       background: #eee;
       cursor: pointer; }
-
-.admin-sidebar {
-  padding: 70px 30px 0 30px; }
-  .admin-sidebar h3 {
-    color: #555;
-    text-transform: capitalize;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
-    font-size: 13px;
-    margin-top: 25px; }
-    .admin-sidebar h3:first-child {
-      margin-top: 0px; }
-  .admin-sidebar ul {
-    font-size: 13px;
-    color: #888; }
-    .admin-sidebar ul li {
-      line-height: 33px;
-      text-indent: 10px; }
-      .admin-sidebar ul li.active, .admin-sidebar ul li:hover {
-        cursor: pointer;
-        font-weight: bold;
-        color: #333;
-        background: #ededed;
-        border-radius: 5px; }
 
 body {
   font-family: "Proxima Nova"; }
@@ -7333,7 +7309,7 @@ body.debug div, body.debug span {
   margin-top: 82px;
   padding-right: 40px; }
   #work .inner {
-    width: 822px; }
+    width: 852px; }
 
 h1 {
   font-size: 22px;

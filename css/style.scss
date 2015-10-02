@@ -16,7 +16,6 @@
 @import 'radio-button';
 @import 'modal';
 @import 'ivr-menu-list';
-@import 'admin-sidebar';
 
 body {
 	font-family: "Proxima Nova";
@@ -117,7 +116,7 @@ body.debug {
 
 	.inner {
 		// to allow for rounded sizes
-		width: (852px-30px);
+		width: 852px;
 	}
 
 }

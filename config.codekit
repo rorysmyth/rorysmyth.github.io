@@ -2,31 +2,6 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19033",
 "files": {
-	"\/css\/admin-sidebar.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/admin-sidebar.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/css\/admin-sidebar.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/admin-sidebar.scss",
-		"outputAbbreviatedPath": "\/css\/admin-sidebar.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/css\/buttons.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -384,28 +359,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/img\/arrow.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 219,
-		"inputAbbreviatedPath": "\/img\/arrow.png",
-		"outputAbbreviatedPath": "\/img\/arrow.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/cog-single.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 551,
-		"inputAbbreviatedPath": "\/img\/cog-single.png",
-		"outputAbbreviatedPath": "\/img\/cog-single.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/cog.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -499,15 +452,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/inc\/debug.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1376,40 +1320,185 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/ng-table-master\/examples\/js\/angular-resource.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/ng-table-master\/examples\/js\/angular-resource.min.js",
 		"outputAbbreviatedPath": "\/ng-table-master\/examples\/js\/min\/angular-resource.min-min.js",
+=======
+	"\/js\/ivr\/directives\/ivr-dropdown.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/ivr-dropdown.js",
+		"outputAbbreviatedPath": "\/js\/ivr\/directives\/min\/ivr-dropdown-min.js",
+>>>>>>> parent of 9778e99... Removed older ivr variations
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/ng-table-master\/examples\/js\/angular.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/ng-table-master\/examples\/js\/angular.min.js",
 		"outputAbbreviatedPath": "\/ng-table-master\/examples\/js\/min\/angular.min-min.js",
+=======
+	"\/js\/ivr\/directives\/ivr-label.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/ivr-label.js",
+		"outputAbbreviatedPath": "\/js\/ivr\/directives\/min\/ivr-label-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/ivr\/directives\/ivr-list.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/ivr-list.js",
+		"outputAbbreviatedPath": "\/js\/ivr\/directives\/min\/ivr-list-min.js",
+>>>>>>> parent of 9778e99... Removed older ivr variations
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+<<<<<<< HEAD
 	"\/ng-table-master\/examples\/js\/jquery-1.9.1.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/ng-table-master\/examples\/js\/jquery-1.9.1.min.js",
 		"outputAbbreviatedPath": "\/ng-table-master\/examples\/js\/min\/jquery-1.9.1.min-min.js",
+=======
+	"\/js\/ivr\/directives\/ivr-nested-capsules.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/ivr-nested-capsules.js",
+		"outputAbbreviatedPath": "\/js\/ivr\/directives\/min\/ivr-nested-capsules-min.js",
+>>>>>>> parent of 9778e99... Removed older ivr variations
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+<<<<<<< HEAD
 	"\/ng-table-master\/examples\/js\/ng-table-export.src.js": {
+=======
+	"\/js\/ivr\/directives\/min\/ivr-label-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/min\/ivr-label-min.js",
+		"outputAbbreviatedPath": "\/js\/ivr\/directives\/min\/min\/ivr-label-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/ivr\/directives\/min\/ivr-list-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/min\/ivr-list-min.js",
+		"outputAbbreviatedPath": "\/js\/ivr\/directives\/min\/min\/ivr-list-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/ivr\/directives\/templates\/ivr-dropdown.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/templates\/ivr-dropdown.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/directives\/templates\/ivr-label.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/templates\/ivr-label.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/directives\/templates\/ivr-list.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/templates\/ivr-list.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/directives\/templates\/ivr-nested-capsules.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/directives\/templates\/ivr-nested-capsules.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/views\/ivr-dropdown.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/views\/ivr-dropdown.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/views\/ivr-label.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/views\/ivr-label.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/views\/ivr-list.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/views\/ivr-list.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/views\/ivr-nested-capsules.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/views\/ivr-nested-capsules.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/ivr\/views\/modals\/edit-route.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/ivr\/views\/modals\/edit-route.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/js\/min\/config-min.js": {
+>>>>>>> parent of 9778e99... Removed older ivr variations
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -1541,6 +1630,7 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+<<<<<<< HEAD
 	"\/ng-table-master\/src\/ng-table\/pager.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1617,6 +1707,9 @@
 		"syntaxCheckerStyle": 1
 		},
 	"\/ng-table-master\/src\/scripts\/07-outro.js": {
+=======
+	"\/js\/settings\/controllers\/min\/settings-min.js": {
+>>>>>>> parent of 9778e99... Removed older ivr variations
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
@@ -2359,7 +2452,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": "node_modules, _logs, .hg, _cache, log, \/bower_components, logs, cache, \/js\/ivr, \/js\/vendor, .git, .svn",
+	"skippedItemsString": "node_modules, .hg, .svn, _cache, .git, _logs, logs, log, \/bower_components, \/js\/vendor, cache",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",
