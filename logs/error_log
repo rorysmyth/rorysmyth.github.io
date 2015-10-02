@@ -11,3 +11,8 @@
 [Thu Nov 13 10:50:37 2014] [error] [client 127.0.0.1] File does not exist: /Users/rsmyth/Sites/sandbox.dev/dd
 [Sat Dec 06 19:12:10.623137 2014] [authz_core:error] [pid 2728] [client 127.0.0.1:49790] AH01630: client denied by server configuration: /Users/rsmyth/Sites/sandbox.dev/
 [Thu Dec 11 14:07:38.505418 2014] [authz_core:error] [pid 4776] [client 127.0.0.1:63987] AH01630: client denied by server configuration: /Users/rsmyth/Sites/sandbox.dev/
+[Tue Feb 10 14:12:58.451312 2015] [authz_core:error] [pid 2122] [client 127.0.0.1:65514] AH01630: client denied by server configuration: /Users/rsmyth/Sites/sandbox.dev/
+[Tue Feb 10 14:12:58.643856 2015] [authz_core:error] [pid 2122] [client 127.0.0.1:65514] AH01630: client denied by server configuration: /Users/rsmyth/Sites/sandbox.dev/favicon.ico
+[Tue Feb 10 14:13:33.043292 2015] [authz_core:error] [pid 5562] [client 127.0.0.1:49178] AH01630: client denied by server configuration: /Users/rsmyth/Sites/sandbox.dev/
+[Tue Feb 10 14:13:33.285630 2015] [authz_core:error] [pid 5562] [client 127.0.0.1:49178] AH01630: client denied by server configuration: /Users/rsmyth/Sites/sandbox.dev/favicon.ico
+[Thu Mar 26 17:16:03.311413 2015] [core:error] [pid 694] (13)Permission denied: [client 127.0.0.1:53103] AH00132: file permissions deny server access: /Users/rsmyth/Sites/sandbox.dev/img/face.jpg, referer: http://sandbox.dev/
